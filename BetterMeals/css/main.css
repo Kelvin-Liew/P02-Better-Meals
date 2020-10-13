@@ -1094,6 +1094,8 @@ td{
  width: 60%;
 }
 
+
+
 /*brand_elements*/
 
 
@@ -1129,4 +1131,10 @@ background-color: #E6E6E6 ;
   width:1000px;
   flex: auto;
 	}
+}
+
+/* image styling */
+
+.productimage:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
