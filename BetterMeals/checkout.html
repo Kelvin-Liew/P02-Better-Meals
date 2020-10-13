@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Better Meals Style Guide</title>
+
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- Squares -->
+
+  </head>
+      <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <a href="https://www.facebook.com/bettermealsca/"><img src="images/logo3.png" alt="New Logo2" class="subsection_heading imagesize" ></a>        <h2>Better Meals</h2>
+        <ul>
+          <li><a href="index.html">Style Guide</a></li>
+          <li><a href="product_page.html">Product Page</a></li>
+          <li><a href="checkout.html">Checkout Cart</a></li>
+          <li><a href="#">Checkout Form</a></li>
+          <li><a href="#payment">Payment Form</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="wrapper">
+    <div class="main_content">
+
+    <div class="body">
+
+
+      <!-- INTERACTIVE ELEMENTS SECTION -->
+      <section>
+        <h1>Checkout Cart & Payment</h1>
+      </section>
+
+          <!-- COMBINED ELEMENTS SECTION // -->
+
+
+
+            <form class="checkoutform section_heading">
+            <table id="t01">
+              <tr>
+                <th style="width:20%; "><p class="checkoutheader" style="padding-left:20%">Product</p></th>
+                <th style="width:65%"></th>
+                <th style="width:15%"><p class="checkoutheader">Price</p></th>
+                <th style="width:10%"><p class="checkoutheader">Quantity</p></th>
+              </tr>
+              <tr>
+                <td><img src="images/frenchtoast.jpg" alt="French Toast" class="subsection_heading" ></td>
+                <td><h3>French Toast</h3><p>Ingredients</p></td>
+                <td><p class="sm">$5.99</p></td>
+                <td><input type="number" id="ftquantity" name="ftquantity" placeholder="0" style="width:100%"></td>
+              </tr>
+              <tr>
+                <td ><img src="images/steakandbeans.jpg" alt="Steak and Beans" class="subsection_heading"></td>
+                <td><h3>Steak &amp; Beans</h3><p>Ingredients</p></td>
+                <td><p class="sm">$6.99</p></td>
+                <td><input type="number" id="sbquantity" name="sbquantity" placeholder="0" style="width:100%;border-color:#E6E6E6"></td>
+              </tr>
+              <tr>
+                <td ><img src="images/strawberryshortcake.jpg" alt="strawberryshortcake" class="subsection_heading" ></td>
+                <td><h3>Strawberry Shortcake</h3><p>Ingredients</p></td>
+                <td><p class="sm">$3.99</p></td>
+                <td><input type="number" id="sscquantity" name="sscquantity" placeholder="0" style="width:100%"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td><p style="float:right">Total:</p></td>
+                <td>$16.96</td>
+              </tr>
+              <tr>
+                <th></th>
+                <th></th>
+                <th><input type="submit" class="button-2" value="Proceed To Checkout" style="float:right;border:none;"></th>
+                <th><input type="reset" class="button-4" value="Reset"></th>
+              </tr>
+
+            </table>
+          </form>
+
+
+            <section id="payment" class="element">
+              <h3 class="section_heading">Payment Form</h3>
+
+
+                <form class="paymentwidth">
+                  <fieldset class="account-info">
+                    <label>
+                     Your Information
+                      <input type="text" name="username" placeholder="Full Name">
+                    </label>
+                    <label>
+                      <input type="email" name="username" placeholder="Email Address">
+                    </label>
+                    <label>
+                   Phone Number:
+                    <input type="text" name="phonenumber" placeholder="604-123-4567" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                  </label>
+                  <label>
+                    Address:
+                    <input type="text" name="address" placeholder="5742 Beresford St, Burnaby, BC V5J 1J1">
+                  </label>
+              <div class="row">
+                <div class="col-50">
+                  <label>Card Number
+                  <input type="text" name="cardnumber" placeholder="1234-5678-9101-1234" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}">
+                  </label>
+                </div>
+                            <div class="col-25">
+                              <label for="expyear">Exp Year
+                              <input type="text" id="expyear" name="expyear" placeholder="MM/YY">
+                              </label>
+                            </div>
+                            <div class="col-25">
+                              <label for="cvv">CVV
+                              <input type="text" id="cvv" name="cvv" placeholder="352">
+                              </label>
+                            </div>
+                          </div>
+                  </fieldset>
+                  <fieldset class="account-action">
+                    <input style="float:left;border:none;" class="button-1" type="submit" name="checkout" value="Checkout">
+                    <label>
+              <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+            </label>
+
+                  </fieldset>
+                </form>
+            </section>
+
+
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,1119 @@
+/*
+  STYLE GUIDE STYLING
+  Default styling for the style guide
+*/
+
+/*FONT IMPORT-------*/
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'roboto', sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+body {
+  background-color:#f3f5f9;
+    vertical-align: middle;
+}
+
+.element {
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+
+code {
+  background-color: rgb(255,255,191);
+  padding: 0.5rem;
+  display: block;
+  font-size: 0.8rem;
+}
+
+/*
+  section margins for headers------------
+*/
+
+.section_heading{
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+
+.subsection_heading{
+
+  margin-bottom: 15px;
+}
+
+.subsection_heading_reverse{
+
+  margin-top: 15px;
+}
+
+.subsection_heading_both{
+
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.standard_padding{
+  padding-top: 1rem;
+}
+
+.section_divide{
+  padding-bottom: 2rem;
+  border-bottom-width: 0.03rem;
+  border-bottom-style: dashed;
+  border-bottom-color: #1A1A1A;
+}
+
+/*
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/*
+  HEADING AND PARAGRAPH ELEMENTS----------------
+*/
+
+h1{
+  font-family: Epilogue;
+  font-size: 2rem;
+}
+
+
+h2 {
+  font-family: Epilogue;
+}
+
+
+h3 {
+  font-family: Epilogue;
+}
+
+h4 {
+  font-family: Epilogue;
+}
+
+h5{
+
+}
+
+p {
+  font-family: roboto;
+  margin-top: 0;
+  padding-bottom: 1.0rem;
+}
+
+p.width-80{
+  width: 80%;
+}
+
+p.sm {
+  font-family: roboto;
+  margin-top: 0;
+  padding-bottom: 1.0rem;
+  font-size: .9rem;
+}
+
+p.checkoutheader{
+font-family: Epilogue;
+font-size: 16px;
+}
+
+a{
+  color: blue;
+}
+
+
+a:active{
+  color: #ff0000;
+  font-weight: bold;
+}
+
+
+a.visited{
+
+/*  color: purple;*/
+}
+
+a:hover {
+  color: #ff0000;
+  text-decoration: underline;
+  border:none;
+}
+
+
+
+h2 a{
+  color: black;
+}
+
+
+h2 a:active{
+  color:black;
+}
+
+
+h2 a.visited{
+
+/*  color: purple;*/
+}
+
+h2 a:hover {
+  color: black;
+  text-decoration: none;
+  border:none;
+  font-weight: bold;
+  text-shadow: 0.15px 0.15px #1f1d1d;
+}
+
+
+
+.alternate_color{
+  color: #72bcd4;
+}
+
+.imagesize{
+
+width:175px;
+height: 175px;
+
+}
+
+.imagesize2{
+
+width:50px;
+height: 50px;
+
+}
+
+
+
+
+/*
+  SIDE BAR  ----------------------------------
+*/
+
+
+/*side bar wrapper guide from https://codepen.io/RajRajeshDn/pen/LKzZNe,and https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sidenav_fixed
+
+*/
+
+.wrapper{
+  display: flex;
+  margin-left: 200px;
+  margin-right: 200px;
+  position: relative;
+
+
+}
+
+.wrapper{
+
+
+}
+
+.wrapper .sidebar{
+
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  margin-left: 200px;
+  width: 200px;
+  height: 100%;
+  background: #72bcd4;
+  padding: 30px 0px;
+  position: fixed;
+}
+
+.wrapper .main_content{
+   width: 100%;
+   margin-left: 200px;
+   /*padding: 20px;*/
+   background: #fff;
+   color: #1A1A1A;
+   border-bottom: 1px solid #e0e4e8;
+
+}
+
+.wrapper .main_content .header{
+   padding-left: 2rem;
+   padding-right: 2rem;
+   padding-top: 2rem;
+   background: #fff;
+   color: #717171;
+   /*border-bottom: 1px solid #e0e4e8;*/
+
+}
+
+.wrapper .main_content .body{
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+   background: #fff;
+}
+
+.wrapper .sidebar h2{
+  color: #fff;
+  /*text-transform: uppercase;*/
+  text-align: left;
+  margin-bottom: 30px;
+  padding-left: 15px;
+  transition: background-color 0.5s ease;
+}
+
+.wrapper .sidebar ul li{
+  padding: 15px;
+  bottom: 1px;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.wrapper .sidebar ul li a{
+  color: #fff;
+  display: block;
+    font-family: Epilogue;
+}
+
+.wrapper .sidebar ul li:hover{
+  background-color: #3a9fbf;
+  transition: background-color 0.5s ease-out;
+}
+
+.wrapper .sidebar a:hover{
+  text-decoration: none;
+  transition: background-color 0.5s ease-out;
+}
+
+.wrapper .sidebar ul li:hover a{
+  color: #fff;
+}
+
+
+/*
+  BUTTON CREATION GUIDE
+*/
+
+/*.button {
+	display: inline-block
+  border: none;
+  border-radius: 4px;
+	color: white;
+	background-color: #07872b;
+	font-size: 1rem;;
+
+	/*
+		By setting two values for padding below, we are now specifying different values for the top/bottom and the left/right in that order. This compound declaration can also be used to set different padding values for each of the sides of a box in top, right, bottom, left order. Example:
+		padding: top right bottom left; would be
+		padding: 10rem 5rem 2rem 12rem;
+
+	padding: 0.5rem 0.75rem;
+
+	/*
+		Because our anchor tags have an underline by default, we end up having to remove them for our buttons (by default).
+
+	text-decoration: none;
+
+	/*
+		Unlike our prior transition statement, here we are also adding a type of easing to the compound statement. As a result the order goes transition: property-to-transition length easing-type;
+
+	transition: background-color 0.5s ease-out;
+}
+
+*/
+
+.button-1 {
+	display: inline-block;
+  border: none;
+  border-radius: 4px;
+	color: white;
+	background-color: #72bcd4;
+	font-size: 1rem;;
+	padding: 0.5rem 0.75rem;
+	text-decoration: none;
+	transition: background-color 0.5s ease-out;
+
+}
+
+.button-1:active, .button-1:hover {
+	color: white;
+	background-color: #3a9fbf ;
+  text-decoration: none;
+}
+
+.button-1:focus {
+  color: white;
+  font-weight: normal;
+	background-color: #3a9fbf ;
+  transition: background-color 0.3s ease-out;
+}
+
+
+.button-2
+{
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+	color: white;
+	background-color: #3a9fbf;
+	font-size: 1rem;;
+	padding: 0.5rem 0.75rem;
+  text-align: center;
+	text-decoration: none;
+	transition: background-color 0.5s ease-out;
+}
+
+.button-2:active, .button-2:hover{
+	color: white;
+	background-color: #3ab5bf;
+  text-decoration: none;
+}
+
+.button-2:focus {
+  color: white;
+  font-weight: normal;
+	background-color: #3a9fbf;
+  transition: background-color 0.3s ease-out;
+}
+
+
+.button-3
+{
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+	color: white;
+	background-color: #E11D2E;
+	font-size: 1rem;;
+	padding: 0.5rem 0.75rem;
+  text-align: center;
+	text-decoration: none;
+	transition: background-color 0.5s ease-out;
+}
+
+.button-3:active, .button-3:hover{
+	color: white;
+	background-color: #d11a2a;
+  text-decoration: none;
+}
+
+.button-3:focus {
+  color: white;
+  font-weight: normal;
+	background-color: #E11D2E;
+  transition: background-color 0.3s ease-out;
+}
+
+.button-4
+{
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+	color: white;
+	background-color: #d3d3d3;
+	font-size: 1rem;;
+	padding: 0.5rem 0.75rem;
+  text-align: center;
+	text-decoration: none;
+	transition: background-color 0.5s ease-out;
+}
+
+.button-4:active, .button-4:hover{
+	color: white;
+	background-color: #adadad;
+  text-decoration: none;
+}
+
+.button-4:focus {
+  color: white;
+  font-weight: normal;
+	background-color: #d3d3d3;
+  transition: background-color 0.3s ease-out;
+}
+
+/*
+  SMALL BUTTONS------
+*/
+
+.button-1-sm {
+	display: inline-block;
+  border: none;
+  border-radius: 4px;
+	color: white;
+	background-color: #72bcd4;
+	font-size: .8rem;
+	padding: 0.5rem 0.75rem;
+	text-decoration: none;
+	transition: background-color 0.5s ease-out;
+
+}
+
+.button-1-sm:active, .button-1-sm:hover {
+	color: white;
+	background-color: #3a9fbf ;
+  text-decoration: none;
+}
+
+.button-1-sm:focus {
+  color: white;
+  font-weight: normal;
+	background-color: #3a9fbf ;
+  transition: background-color 0.3s ease-out;
+}
+
+
+.button-2-sm
+{
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+	color: white;
+	background-color: #3a9fbf;
+	font-size: .8rem;
+	padding: 0.5rem 0.75rem;
+  text-align: center;
+	text-decoration: none;
+	transition: background-color 0.5s ease-out;
+}
+
+.button-2-sm:active, .button-2-sm:hover{
+	color: white;
+	background-color: #3ab5bf;
+  text-decoration: none;
+}
+
+.button-2-sm:focus {
+  color: white;
+  font-weight: normal;
+	background-color: #3a9fbf;
+  transition: background-color 0.3s ease-out;
+}
+
+
+.button-3-sm
+{
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+	color: white;
+	background-color: #E11D2E;
+	font-size: .8rem;
+	padding: 0.5rem 0.75rem;
+  text-align: center;
+	text-decoration: none;
+	transition: background-color 0.5s ease-out;
+}
+
+.button-3-sm:active, .button-3-sm:hover{
+	color: white;
+	background-color: #d11a2a;
+  text-decoration: none;
+}
+
+.button-3-sm:focus {
+  color: white;
+  font-weight: normal;
+	background-color: #E11D2E;
+  transition: background-color 0.3s ease-out;
+}
+
+.button-4-sm
+{
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+	color: white;
+	background-color: #d3d3d3;
+	font-size: .8rem;
+	padding: 0.5rem 0.75rem;
+  text-align: center;
+	text-decoration: none;
+	transition: background-color 0.5s ease-out;
+}
+
+.button-4-sm:active, .button-4:hover{
+	color: white;
+	background-color: #adadad;
+  text-decoration: none;
+}
+
+.button-4-sm:focus {
+  color: white;
+  font-weight: normal;
+	background-color: #d3d3d3;
+  transition: background-color 0.3s ease-out;
+}
+
+/*
+  LARGE BUTTONS---------------------------
+*/
+
+.button-1-lg {
+	display: inline-block;
+  border: none;
+  border-radius: 4px;
+	color: white;
+	background-color: #72bcd4;
+	font-size: 1.2rem;
+	padding: 0.5rem 0.75rem;
+	text-decoration: none;
+	transition: background-color 0.5s ease-out;
+
+}
+
+.button-1-lg:active, .button-1-lg:hover {
+	color: white;
+	background-color: #3a9fbf ;
+  text-decoration: none;
+}
+
+.button-1-lg:focus {
+  color: white;
+  font-weight: normal;
+	background-color: #3a9fbf ;
+  transition: background-color 0.3s ease-out;
+}
+
+
+.button-2-lg
+{
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+	color: white;
+	background-color: #3a9fbf;
+	font-size: 1.2rem;;
+	padding: 0.5rem 0.75rem;
+  text-align: center;
+	text-decoration: none;
+	transition: background-color 0.5s ease-out;
+}
+
+.button-2-lg:active, .button-2-lg:hover{
+	color: white;
+	background-color: #3ab5bf;
+  text-decoration: none;
+}
+
+.button-2-lg:focus {
+  color: white;
+  font-weight: normal;
+	background-color: #3a9fbf;
+  transition: background-color 0.3s ease-out;
+}
+
+
+.button-3-lg
+{
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+	color: white;
+	background-color: #E11D2E;
+	font-size: 1.2rem;;
+	padding: 0.5rem 0.75rem;
+  text-align: center;
+	text-decoration: none;
+	transition: background-color 0.5s ease-out;
+}
+
+.button-3-lg:active, .button-3-lg:hover{
+	color: white;
+	background-color: #d11a2a;
+  text-decoration: none;
+}
+
+.button-3-lg:focus {
+  color: white;
+  font-weight: normal;
+	background-color: #E11D2E;
+  transition: background-color 0.3s ease-out;
+}
+
+.button-4-lg
+{
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+	color: white;
+	background-color: #d3d3d3;
+	font-size: 1.2rem;;
+	padding: 0.5rem 0.75rem;
+  text-align: center;
+	text-decoration: none;
+	transition: background-color 0.5s ease-out;
+}
+
+.button-4-lg:active, .button-4-lg:hover{
+	color: white;
+	background-color: #adadad;
+  text-decoration: none;
+}
+
+.button-4-lg:focus {
+  color: white;
+  font-weight: normal;
+	background-color: #d3d3d3;
+  transition: background-color 0.3s ease-out;
+}
+
+/*
+  WIDE BUTTONS ---------------------
+*/
+
+.button-1-wide
+{
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  width: 33%;
+	color: white;
+	background-color: #72bcd4;
+	font-size: 1rem;;
+	padding: 0.5rem 0.75rem;
+  text-align: center;
+	text-decoration: none;
+	transition: background-color 0.5s ease-out;
+}
+
+.button-1-wide:active, .button-1-wide:hover{
+	color: white;
+	background-color: #3a9fbf ;
+  text-decoration: none;
+}
+
+.button-1-wide:focus {
+  color: white;
+  font-weight: normal;
+	background-color: #72bcd4;
+  transition: background-color 0.3s ease-out;
+}
+
+.button-2-wide
+{
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  width: 33%;
+	color: white;
+	background-color: #3a9fbf;
+	font-size: 1rem;;
+	padding: 0.5rem 0.75rem;
+  text-align: center;
+	text-decoration: none;
+	transition: background-color 0.5s ease-out;
+}
+
+.button-2-wide:active, .button-2-wide:hover{
+	color: white;
+	background-color: #3ab5bf;
+  text-decoration: none;
+}
+
+.button-2-wide:focus {
+  color: white;
+  font-weight: normal;
+	background-color: #3a9fbf;
+  transition: background-color 0.3s ease-out;
+}
+
+.button-3-wide
+{
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  width: 33%;
+	color: white;
+	background-color: #E11D2E;
+	font-size: 1rem;;
+	padding: 0.5rem 0.75rem;
+  text-align: center;
+	text-decoration: none;
+	transition: background-color 0.5s ease-out;
+}
+
+.button-3-wide:active, .button-3-wide:hover{
+	color: white;
+	background-color: #d11a2a;
+  text-decoration: none;
+}
+
+.button-3-wide:focus {
+  color: white;
+  font-weight: normal;
+	background-color: #E11D2E;
+  transition: background-color 0.3s ease-out;
+}
+
+.button-4-wide
+{
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  width: 33%;
+	color: white;
+	background-color: #d3d3d3;
+	font-size: 1rem;;
+	padding: 0.5rem 0.75rem;
+  text-align: center;
+	text-decoration: none;
+	transition: background-color 0.5s ease-out;
+}
+
+.button-4-wide:active, .button-4-wide:hover{
+	color: white;
+	background-color: #adadad;
+  text-decoration: none;
+}
+
+.button-4-wide:focus {
+  color: white;
+  font-weight: normal;
+	background-color: #d3d3d3;
+  transition: background-color 0.3s ease-out;
+}
+
+
+.button-5-card {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  transition: .5s ease;
+
+
+}
+
+.button-5-card:hover {
+  opacity: 0.8;
+  color: white;
+  text-decoration: none;
+  background-color: #72bcd4;
+  transition:  0.5s ease-out;
+
+}
+
+
+/*
+  CARDS -------------------
+*/
+
+.clearfix{
+    overflow: auto;
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*
+    Flex wrapping and justify tutorial via https://getflywheel.com/layout/flexbox-create-modern-card-design-layout/
+
+    Product card learned from https://www.w3schools.com/howto/howto_css_product_card.asp
+
+*/
+.cards {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content:flex-start;
+   padding-bottom: 20px;
+}
+
+/*.bannersize{
+
+width:100%;
+
+}*/
+
+.card{
+ box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+ max-width: 290px;
+ box-sizing: border-box;
+ margin-left: inherit;
+ margin-right:10px;
+ display: inline-block;
+ text-align: center;
+ float: left;
+ padding: 10px;
+
+}
+
+
+/*
+    CHECK BOXES VIA --------------
+*/
+
+
+/*
+  COMBINED ELEMENTS -------------------
+*/
+
+/*
+  PAYMENT FORM--------------
+*/
+
+/*
+
+  //Form via https://learn.shayhowe.com/html-css/building-forms/
+  some elements learned from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_checkout_form
+
+*/
+*,
+
+*:before,
+
+*:after {
+   box-sizing: border-box;
+}
+form {
+  border: 1px solid;
+  border-color:#E6E6E6;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 500px;
+}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+input {
+  height:2.5rem;
+  border-radius: 5px;
+  border-color:#E6E6E6;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.paymentwidth{
+width:100%;
+flex: auto;
+
+}
+
+input:focus{
+border:none;
+
+}
+.account-info {
+  padding: 20px 20px 0 20px;
+}
+.account-info label {
+  color: #395870;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.account-info input {
+  background: #fff;
+  border: 1px solid #c6c7cc;
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, .1);
+  color: #636466;
+  padding: 6px;
+  margin-top: 6px;
+  width: 100%;
+}
+.account-action {
+  background: #ededed;
+  border-top: 1px solid #c6c7cc;
+  padding: 20px;
+}
+
+/*.account-action .btn {
+  background: linear-gradient(to right, #add8e6 , #72bcd4);
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  float: left;
+  padding: 8px 50px;
+}*/
+
+.account-action label {
+color: #7c7c80;
+font-size: 12px;
+float: left;
+margin: 0 0 0 20px;
+}
+
+.menu-info {
+  padding: 20px 20px 20px 20px;
+}
+
+.menu-info p {
+  font-family: roboto;
+  margin-top: -0.5rem;
+  padding-bottom: 0.75rem;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+
+
+.row {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+
+.col-25 {
+  -ms-flex: 25%;
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%;
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%;
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding-right: 10px;
+}
+
+
+
+
+/*
+  Check Out Cart ------------------
+*/
+
+
+.checkoutform{
+    width: 100%;
+    border: 1px solid #c6c7cc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  input {
+    height:2.5rem;
+    border-radius: 5px;
+    margin: 0;
+    vertical-align: middle;
+  }
+
+input {
+  height:2.5rem;
+  border-radius: 5px;
+  margin: 0;
+  vertical-align: middle;
+  padding: 3px;
+}
+
+table {
+  width:100%;
+  border: 1px solid;
+  border-color: #c6c7cc;
+  border-collapse: collapse;
+  border-radius: 2px;
+
+}
+
+
+table, th, td {
+  height: 70%;
+}
+th, td {
+
+  padding: 10px;
+}
+
+td{
+
+  border-bottom: 1px solid;
+  border-color: #c6c7cc;
+
+}
+
+
+
+
+
+
+#t01{
+}
+
+#t01 th {
+  background-color: #72bcd4;
+  color: white;
+  text-align: left;
+}
+
+#t01 p {
+  padding:0;
+}
+
+#t01 img {
+  display: block;
+ margin-left: auto;
+ margin-right: auto;
+ margin-bottom: auto;
+ width: 60%;
+}
+
+/*brand_elements*/
+
+
+.bluesquare {
+height: 30px;
+width: 200px;
+background-color: #72bcd4;
+}
+
+.offblacksquare {
+height: 30px;
+width: 200px;
+background-color: #1A1A1A ;
+}
+
+.offwhitesquare {
+height: 30px;
+width: 200px;
+background-color: #F5F5F5 ;
+}
+
+.lightgreysquare {
+height: 30px;
+width: 200px;
+background-color: #E6E6E6 ;
+}
+
+
+@media (max-width: 1000px) {
+
+
+.paymentwidth{
+  width:1000px;
+  flex: auto;
+	}
+}
