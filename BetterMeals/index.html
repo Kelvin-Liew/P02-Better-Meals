@@ -12,24 +12,26 @@
 
   </head>
   <body>
-    <div class="wrapper">
-      <div class="sidebar">
-        <a href="https://www.facebook.com/bettermealsca/"><img src="images/logo3.png" alt="New Logo2" class="subsection_heading imagesize" ></a>
-        <h2>Better Meals</h2>
-        <ul>
-          <li><a href="index.html">Style Guide</a></li>
-          <li><a href="product_page.html">Product Page</a></li>
-          <li><a href="checkout.html">Checkout Cart</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#interactive_elements">Interactive Elements</a></li>
-          <li><a href="#product_cards">Product Cards</a></li>
-          <li><a href="#payment">Payment Demo</a></li>
-          <li><a href="#checkoutcart">Checkout Demo</a></li>
-          <li><a href="#brand_elements">Brand Elements</a></li>
-          <li><a href="#citations">Citations</a></li>
-        </ul>
+    <nav>
+      <div class="wrapper">
+        <div class="sidebar">
+          <a href="https://www.facebook.com/bettermealsca/"><img src="images/logo3.png" alt="Better Meals Logo" class="subsection_heading imagesize" ></a>
+          <h2>Better Meals</h2>
+          <ul>
+            <li><a href="index.html">Style Guide</a></li>
+            <li><a href="product_page.html">Product Page</a></li>
+            <li><a href="checkout.html">Checkout Cart</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#interactive_elements">Interactive Elements</a></li>
+            <li><a href="#product_cards">Product Cards</a></li>
+            <li><a href="#payment">Payment Demo</a></li>
+            <li><a href="#checkoutcart">Checkout Demo</a></li>
+            <li><a href="#brand_elements">Brand Elements</a></li>
+            <li><a href="#citations">Citations</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
+  </nav>
 
 
     <div class="wrapper">
@@ -44,14 +46,14 @@
     </header>
   </div>*/
 -->
-    <div id="about" class="body">
+    <div id="about" class="content_padding">
 
 
       <!-- INTERACTIVE ELEMENTS SECTION -->
       <section>
         <h1>About</h1>
       </section>
-      <section class="element standard_padding section_heading">
+      <section class="element standard_padding section_heading"><br>
             <h2 class="section_heading">Brand Questions</h2>
               <h3>What does the company do, or offer?</h3>
                 <ul>
@@ -177,7 +179,7 @@
 
           <h4>CSS selector:</h4>
           <ul>
-            <li>.cards</li>
+            <li>.card_group</li>
             <li>.card</li>
           </ul>
 
@@ -185,7 +187,7 @@
           <code>
 
             <b>HTML</b><br><br>
-            &lt;div class="cards"&gt;<br>
+            &lt;div class="card_group"&gt;<br>
             &lt;div class="card"&gt;<br><br>
               image from https://www.jessicagavin.com/french-toast/<br><br>
               &lt;img src="images/frenchtoast.jpg" alt="French Toast" class="subsection_heading" style="width:100%"&gt;<br>
@@ -198,7 +200,7 @@
 
             <b>CSS</b><br>
             <br>
-            .cards { <br>
+            .card_group { <br>
                display: flex; <br>
                flex-wrap: wrap; <br>
                justify-content:flex-start; <br>
@@ -219,7 +221,7 @@
           </code>
           <br>
 
-          <div class="cards">
+          <div class="card_group">
                   <div class="card">
                     <!--image from https://www.jessicagavin.com/french-toast/ -->
                     <img src="images/frenchtoast.jpg" alt="French Toast" class="subsection_heading" style="width:100%">
@@ -610,7 +612,7 @@
 
             <section class="element">
               <h3 class="section_heading ">Brand Colors</h3>
-              <div class="cards">
+              <div class="card_group">
               <ul>
                 <li class="card">
                   <div class="bluesquare subsection_heading"></div>
