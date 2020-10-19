@@ -81,6 +81,7 @@ code {
   INTERACTIVE ELEMENTS -------------------
 */
 
+
 /*
   HEADING AND PARAGRAPH ELEMENTS----------------
 */
@@ -300,6 +301,38 @@ height: 50px;
 
 .wrapper .sidebar ul li:hover a{
   color: #fff;
+}
+
+/* NEW NAV */
+
+.headerNavElement{
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.headerNavElement a{
+   font-family: 'Montserrat-Semibold';
+   font-size: 18px;
+   padding-left: 3.75rem;
+    text-decoration: none;
+}
+
+.headerNavElement a:visited{
+   color: black;
+}
+
+.headerNavElement a:hover{
+   color: #6993FD;
+}
+
+.topNavSection{
+  
+  display: inline;
+  width: 100%;
+
+}
+
+.headerNavElement{
+  text-align: center;
 }
 
 
