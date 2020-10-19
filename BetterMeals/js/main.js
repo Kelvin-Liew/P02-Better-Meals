@@ -6,6 +6,9 @@ window.onload = function(){
 	// Get the button that opens the modal
 	var btn = document.getElementById("myBtn");
 
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	var img = document.getElementById("myImg");
+
 	// Get the <span> element that closes the modal
 	var span = document.getElementsByClassName("close")[0];
 
@@ -17,6 +20,10 @@ window.onload = function(){
 	// When the user clicks on <span> (x), close the modal
 	span.onclick = function() {
 	  modal.style.display = "none";
+	}
+
+	img.onclick = function(){
+		modal.style.display = "block";
 	}
 
 	// When the user clicks anywhere outside of the modal, close it
