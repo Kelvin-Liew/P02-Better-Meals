@@ -1101,6 +1101,7 @@ td{
 
 
 
+
 /*brand_elements*/
 
 
@@ -1257,14 +1258,12 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
 }
 
 .topnav a {
-  float: left;
+  float: right;
   display: block;
-  color: #f2f2f2;
-  text-align: center;
+  color: black;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -1282,10 +1281,12 @@ body {
 
 .topnav .icon {
   display: none;
+  width: 30px;
+  height: 30px;
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+  /* .topnav a:not(:first-child) {display: none;} */
   .topnav a.icon {
     float: right;
     display: block;
@@ -1327,4 +1328,11 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: black;
+}
+
+.logo{
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  bottom: 10px;
 }
