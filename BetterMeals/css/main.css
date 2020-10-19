@@ -211,9 +211,12 @@ height: 50px;
 
 .wrapper{
   display: flex;
-  margin-left: 200px;
-  margin-right: 200px;
+/*  margin-left: 200px;
+  margin-right: 200px;*/
   position: relative;
+  margin-left: 20%;
+  margin-right: 20%;
+
 
 
 }
@@ -235,8 +238,10 @@ height: 50px;
 
 .wrapper .main_content{
    width: 100%;
-   margin-left: 200px;
+  /* margin-left: 200px;*/
+
    /*padding: 20px;*/
+   margin: auto;
    background: #fff;
    color: #1A1A1A;
    border-bottom: 1px solid #e0e4e8;
@@ -827,8 +832,11 @@ height: 50px;
 .card_group {
    display: flex;
    flex-wrap: wrap;
-   justify-content:flex-start;
+   align-items: center;
+   justify-content: center;
    padding-bottom: 20px;
+   margin: 0 auto;
+
 }
 
 /*.bannersize{
