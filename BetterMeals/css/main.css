@@ -1072,8 +1072,8 @@ margin: 0 0 0 20px;
 
 .checkoutform{
     width: 100%;
-    border: 1px solid #c6c7cc;
-    border-radius: 5px;
+    border: none;
+    border-radius: 0px;
     overflow: hidden;
   }
   fieldset {
@@ -1098,7 +1098,7 @@ input {
 
 table {
   width:100%;
-  border: 1px solid;
+  /*border: 1px solid;*/
   border-color: #c6c7cc;
   border-collapse: collapse;
   border-radius: 2px;
@@ -1286,6 +1286,20 @@ grid-row-gap: 0px;
 
 .close:hover,
 .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close2 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
