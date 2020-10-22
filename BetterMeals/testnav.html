@@ -9,27 +9,35 @@
 
 </head>
 <body>
-
-  <div class="topnav" id="myTopnav">
-
+  <!-- Chamira added start -->
+  <nav class="navbar">
+    <span id="navbar-toggle">
+        <i class="fas fa-bars"></i>
+    </span>
     <div class="logo">
-    <img  alt="W3Schools" src="images/logo3.png" width="30" height="30">
-  </div>
-
-
-<a href="product_page.html">Product Page</a>
-<a href="checkout.html">Checkout Cart</a>
-<a href="#">Breakfast</a>
-<a href="#entrees">Entrees</a>
-<a href="#dessert">Dessert</a>
-
-
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
-
-
+      <img  alt="W3Schools" src="images/logo3.png" width="50" height="50">
+    </div>
+    <ul id="main-nav">
+        <li>
+          <a class="one" href="product_page.html">Product Page</a>
+        </li>
+        <li>
+          <a class="one" href="checkout.html">Checkout Cart</a>
+        </li>
+        <li>
+          <a class="one" href="#">Breakfast</a>
+        </li>
+        <li>
+          <a class="one" href="#entrees">Entrees</a>
+        </li>
+        <li>
+          <a class="one" href="#dessert">Dessert</a>
+        </li>
+    </ul>
+</nav>
+<script src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+<script src="main.js"></script>
+<!-- Chamira added end -->
 <div class="hero-image">
   <div class="hero-text">
     <h1 class ="alternate_color">I am John Doe</h1>
@@ -54,7 +62,7 @@
 
 
       <div class="parent">
-        <div class="div1"> <img  src="images/frenchtoast.jpg" alt="French Toast" style="width:100%"></div>
+        <div class="div1"> <img  src="images/frenchtoast.jpg" alt="French Toast" style="width:60%"></div>
         <div class="div2"> <h1 class="subsection_heading">Breakfast Croissant</h1>
           <p>Baked Croissant Breakfast Sandwiches made with fluffy and cheesy scrambled eggs, sliced ham, sharp cheddar cheese, on buttery croissants. Easy to make-ahead and freeze for grab-n-go meals too!  </p></div>
         <div class="div3"> </div>
@@ -242,7 +250,22 @@
           </section>
         </div>
 </div>
+<script>
+let mainNav=document.getElementById('main-nav');
+let navbarToggle=document.getElementById('navbar-toggle');
 
+navbarToggle.addEventListener('click',function(){
 
+    if(this.classList.contains('active')){
+        mainNav.style.display="none";
+        this.classList.remove('active');
+    }
+    else{
+        mainNav.style.display="flex";
+        this.classList.add('active');
+
+    }
+});
+</script>
 </body>
 </html>
