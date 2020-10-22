@@ -303,7 +303,46 @@ height: 50px;
   color: #fff;
 }
 
+ /* STICKY NAVIGATION ---------------------------------- */
+ .sticky {
+  position: fixed;
+  top: 0;
+  z-index: 400;
+  width: 100%;
+   -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.25);
+-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.25);
+box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.25);
+}
 
+
+ .stickyNav{
+  
+  width: 100%;
+  padding-top: 1.3em;
+  padding-bottom: 1.3em;
+  background-color: white;
+  text-align: center;
+  text-decoration: none;
+
+ }
+
+ .stickyNav li{
+  display: inline;
+  padding-right: 2em;
+ }
+
+ .stickyNav a{
+  color: black;
+  text-decoration: none;
+ }
+
+ .stickyNav a:visited{
+  font-weight: bold;
+ }
+
+ .stickyNav a:active{
+  color: red;
+ }
 
 /*
 NEW CSS ---------------------------------
@@ -348,7 +387,7 @@ NAVIGATION AND HERO IMAGE
   /* background-image:url("images/banner1.jpg"); */
   background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('images/banner1.jpg');
   /* Set a specific height */
-  height: 40vh;
+  height: 90vh;
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
