@@ -1,56 +1,72 @@
 window.onload = function(){
 
-	// Get the modal
-	var modal = document.getElementById("myModal");
+	// // Get the modal
+	// var modal = document.getElementById("myModal");
 
-	// modal2
-	var modal2 = document.getElementById("myModal2");
+	// // modal2
+	// var modal2 = document.getElementById("myModal2");
 
-	// Get the button that opens the modal
-	var btn = document.getElementById("myBtn");
+	// // Get the button that opens the modal
+	// var btn = document.getElementById("myBtn");
 
-	// Get the image and insert it inside the modal - use its "alt" text as a caption
-	var img = document.getElementById("myImg");
+	// // Get the image and insert it inside the modal - use its "alt" text as a caption
+	// var img = document.getElementById("myImg");
 
-	var add2cart = document.getElementById("myAdd2cart");
+	// var add2cart = document.getElementById("myAdd2cart");
 
-	// Get the <span> element that closes the modal
-	var span = document.getElementsByClassName("close")[0];
+	// // Get the <span> element that closes the modal
+	// var span = document.getElementsByClassName("close")[0];
 
-	// Get the button that opens the modal
-	var closebtn = document.getElementById("closeBtn");
+	// // Get the button that opens the modal
+	// var closebtn = document.getElementById("closeBtn");
 
+	// var header = document.getElementById("menuNav");
 
-	// When the user clicks the button, open the modal
-	btn.onclick = function() {
-	  modal.style.display = "block";
-	}
+	var sticky = 5;
 
-	add2cart.onclick = function() {
-	  modal2.style.display = "block";
-	}
+	// if (header !== undefined){
+	// 	console.log('you');
+	// }
 
-	// When the user clicks on <span> (x), close the modal
-	span.onclick = function() {
-	  modal.style.display = "none";
-	}
-
-	closebtn.onclick = function() {
-	  modal2.style.display = "none";
+	if (sticky !== undefined){
+		console.log('me');
 	}
 
 
 
-	img.onclick = function(){
-		modal.style.display = "block";
-	}
 
-	// When the user clicks anywhere outside of the modal, close it
-	window.onclick = function(event) {
-	  if (event.target == modal) {
-	    modal.style.display = "none";
-	  }
-	}
+	// // When the user clicks the button, open the modal
+	// btn.onclick = function() {
+	//   modal.style.display = "block";
+	// }
+
+	// add2cart.onclick = function() {
+	//   modal2.style.display = "block";
+	// }
+
+	// // When the user clicks on <span> (x), close the modal
+	// span.onclick = function() {
+	//   modal.style.display = "none";
+	// }
+
+	// closebtn.onclick = function() {
+	//   modal2.style.display = "none";
+	// }
+
+
+
+	// img.onclick = function(){
+	// 	modal.style.display = "block";
+	// }
+
+	// // When the user clicks anywhere outside of the modal, close it
+	// window.onclick = function(event) {
+	//   if (event.target == modal) {
+	//     modal.style.display = "none";
+	//   }
+	// }
+
+	window.onscroll = function(){makeSticky()};
 
 };
 
@@ -65,20 +81,17 @@ function myFunction() {
 	}
 }
 
-//chamira added
-// let mainNav=document.getElementById('main-nav');
-// let navbarToggle=document.getElementById('navbar-toggle');
 
-// navbarToggle.addEventListener('click',function(){
 
-//     if(this.classList.contains('active')){
-//         mainNav.style.display="none";
-//         this.classList.remove('active');
-//     }
-//     else{
-//         mainNav.style.display="flex";
-//         this.classList.add('active');
+function makeSticky() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+    console.log('Hello');
+  } else {
+    header.classList.remove("sticky");
+    console.log('goodbye');
+  }
+}
 
-//     }
-// });
-//chamira added end
+
+

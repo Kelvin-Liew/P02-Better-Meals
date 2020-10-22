@@ -9,35 +9,27 @@
 
 </head>
 <body>
-  <!-- Chamira added start -->
-  <nav class="navbar">
-    <span id="navbar-toggle">
-        <i class="fas fa-bars"></i>
-    </span>
+
+  <div class="topnav" id="myTopnav">
+
     <div class="logo">
-      <img  alt="W3Schools" src="images/logo3.png" width="50" height="50">
-    </div>
-    <ul id="main-nav">
-        <li>
-          <a class="one" href="product_page.html">Product Page</a>
-        </li>
-        <li>
-          <a class="one" href="checkout.html">Checkout Cart</a>
-        </li>
-        <li>
-          <a class="one" href="#">Breakfast</a>
-        </li>
-        <li>
-          <a class="one" href="#entrees">Entrees</a>
-        </li>
-        <li>
-          <a class="one" href="#dessert">Dessert</a>
-        </li>
-    </ul>
-</nav>
-<script src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
-<script src="main.js"></script>
-<!-- Chamira added end -->
+    <img  alt="W3Schools" src="images/logo3.png" width="30" height="30">
+  </div>
+
+
+<a href="product_page.html">Product Page</a>
+<a href="checkout.html">Checkout Cart</a>
+<a href="#">Breakfast</a>
+<a href="#entrees">Entrees</a>
+<a href="#dessert">Dessert</a>
+
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
 <div class="hero-image">
   <div class="hero-text">
     <h1 class ="alternate_color">I am John Doe</h1>
@@ -47,225 +39,7 @@
   </div>
 </div>
 
-<div class="wrapper">
-  <div class="main_content">
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <div class="modal-header ">
-      <span class="close">&times;</span>
-    </div>
-    <div class="modal-body">
 
 
-      <div class="parent">
-        <div class="div1"> <img  src="images/frenchtoast.jpg" alt="French Toast" style="width:60%"></div>
-        <div class="div2"> <h1 class="subsection_heading">Breakfast Croissant</h1>
-          <p>Baked Croissant Breakfast Sandwiches made with fluffy and cheesy scrambled eggs, sliced ham, sharp cheddar cheese, on buttery croissants. Easy to make-ahead and freeze for grab-n-go meals too!  </p></div>
-        <div class="div3"> </div>
-        <div class="div4"><h1 class="subsection_heading">420</h1>calories </div>
-        <div class="div5"> <h1 class="subsection_heading">40g</h1>carbs</div>
-        <div class="div6"> <h1 class="subsection_heading">13g</h1>sodium</div>
-      </div>
-    </div>
-    <div class="modal-footer">
-
-    </div>
-  </div>
-</div>
-
-
-  <!-- The Modal 2 -->
-  <div id="myModal2" class="modal">
-
-    <!-- Modal content -->
-    <div class="modal-content">
-      <div class="modal-header ">
-        <span id="closeBtn" class="close">&times;</span>
-      </div>
-
-        <form class="checkoutform">
-        <table id="t01">
-          <tr>
-            <th style="width:20%; "><p class="checkoutheader" style="padding-left:20%">Product</p></th>
-            <th style="width:65%"></th>
-            <th style="width:15%"><p class="checkoutheader">Price</p></th>
-            <th style="width:10%"><p class="checkoutheader">Quantity</p></th>
-          </tr>
-          <tr>
-            <td><img src="images/frenchtoast.jpg" alt="French Toast" class="subsection_heading" ></td>
-            <td><h3>French Toast</h3><p>Ingredients</p></td>
-            <td><p class="sm">$5.99</p></td>
-            <td><input type="number" id="ftquantity" name="ftquantity" placeholder="0" style="width:100%"></td>
-          </tr>
-          <tr>
-            <td ><img src="images/steakandbeans.jpg" alt="Steak and Beans" class="subsection_heading"></td>
-            <td><h3>Steak &amp; Beans</h3><p>Ingredients</p></td>
-            <td><p class="sm">$6.99</p></td>
-            <td><input type="number" id="sbquantity" name="sbquantity" placeholder="0" style="width:100%;border-color:#E6E6E6"></td>
-          </tr>
-          <tr>
-            <td ><img src="images/strawberryshortcake.jpg" alt="strawberryshortcake" class="subsection_heading" ></td>
-            <td><h3>Strawberry Shortcake</h3><p>Ingredients</p></td>
-            <td><p class="sm">$3.99</p></td>
-            <td><input type="number" id="sscquantity" name="sscquantity" placeholder="0" style="width:100%"></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td><p style="float:right">Total:</p></td>
-            <td>$16.96</td>
-          </tr>
-
-        </table>
-      </form>
-
-      <div class="modal-footer">
-        <input type="submit" class="button-2" value="Proceed To Checkout" style="float:right;border:none;">
-
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-<section>
-  <h1>Better Meals Menu Template</h1>
-</section>
-
-<section class="element">
-
-
-
-            <h3 class="section_heading">Breakfast Items</h3>
-            <div class="card_group ">
-                    <div class="card">
-                      <!--image from https://www.jessicagavin.com/french-toast/ -->
-                      <a id="myImg"> <img  src="images/frenchtoast.jpg" alt="French Toast" class="subsection_heading productimage " style="width:100%"> </a>
-                      <h2>FrenchToast</h2>
-                      <p>$4.99</p>
-                      <p>Made with whole grain bread, real butter, and pure Canadian Maple Syrup</p>
-                      <button id="myAdd2cart" class="button-5-card">Add to Cart</button>
-                    </div>
-
-                    <div class="card">
-                      <!--image from https://www.jessicagavin.com/french-toast/ -->
-                      <img src="images/omelet.jpg" alt="Ham and Swiss Omelet" class="subsection_heading" style="width:100%">
-                      <h2>Ham and Swiss Omelet</h2>
-                      <p>$4.99</p>
-                      <p>Made with whole grain bread, real butter, and pure Canadian Maple Syrup</p>
-                      <p class="button-5-card">Add to Cart</p>
-                    </div>
-
-                    <div class="card">
-                      <!--image from hhttps://www.tasteofhome.com/recipes/beef-and-beans/ -->
-                      <img src="images/breakfastsandwich.jpg" alt="Entrees" class="subsection_heading" style="width:100%">
-                      <h2>Breakfast Croissant</h2>
-                      <p>$4.99</p>
-                      <p>AAA steak, roasted red peppers, and black beans, served over a bed of white rice</p>
-                      <p class="button-5-card">Add to Cart</p>
-                    </div>
-              </div>
-          </section>
-
-          <section id="entrees" class="element">
-            <h3 class="section_heading">Entrees</h3>
-            <div class="card_group">
-                    <div class="card">
-                      <!--image from https://www.jessicagavin.com/french-toast/ -->
-                      <img src="images/steakandbeans.jpg" alt="Steak And Beans" class="subsection_heading" style="width:100%">
-                      <h2>Steak And Bean</h2>
-                      <p>$6.99</p>
-                      <p>Made with whole grain bread, real butter, and pure Canadian Maple Syrup</p>
-                      <p class="button-5-card">Add to Cart</p>
-                    </div>
-
-                    <div class="card">
-                      <!--image from hhttps://www.tasteofhome.com/recipes/beef-and-beans/ -->
-                      <img src="images/macncheese.jpg" alt="macncheese" class="subsection_heading" style="width:100%">
-                      <h2>Mac and Cheese</h2>
-                      <p>$6.99</p>
-                      <p>AAA steak, roasted red peppers, and black beans, served over a bed of white rice</p>
-                      <p class="button-5-card">Add to Cart</p>
-                    </div>
-
-                    <div class="card">
-                      <!--image from hhttps://www.tasteofhome.com/recipes/beef-and-beans/ -->
-                      <img src="images/pasta.jpg" alt="Garlic Herb Spaghetti" class="subsection_heading" style="width:100%">
-                      <h2>Garlic Herb Spaghetti</h2>
-                      <p>$6.99</p>
-                      <p>AAA steak, roasted red peppers, and black beans, served over a bed of white rice</p>
-                      <p class="button-5-card">Add to Cart</p>
-                    </div>
-
-                    <div class="card">
-                      <!--image from https://www.ilovevegan.com/tofu-noodle-soup/ -->
-                      <img src="images/chickennoodlesoup.jpg" alt="Soups" class="subsection_heading" style="width:100%">
-                      <h2>Chicken Noodle Soup</h2>
-                      <p>$4.99</p>
-                      <p>Whole grain noodles, local fresh chicken and the freshes carrots and peas</p>
-                      <p class="button-5-card">Add to Cart</p>
-                    </div>
-                  </div>
-          </section>
-
-          <section id="dessert" class="element">
-            <h3 class="section_heading">Dessert</h3>
-            <div class="card_group">
-              <div class="card">
-                <!--image from https://www.tasteofhome.com/recipes/strawberry-shortcake/ -->
-                <img src="images/strawberryshortcake.jpg" alt="Strawberry Short Cake" class="subsection_heading " style="width:100%">
-                <h2>Strawberry Short Cake</h2>
-                <p>$3.99</p>
-                <p>A fluffy shortcakse topped with whipped cream and fresh strawberries</p>
-                <p class="button-5-card">Add to Cart</p>
-              </div>
-
-              <div class="card">
-                <!--image from https://www.tasteofhome.com/recipes/strawberry-shortcake/ -->
-                <img src="images/peachcobbler.jpg" alt="Peach Cobbler" class="subsection_heading " style="width:100%">
-                <h2>Peach Cobbler</h2>
-                <p>$3.99</p>
-                <p>A fluffy shortcakse topped with whipped cream and fresh strawberries</p>
-                <p class="button-5-card">Add to Cart</p>
-              </div>
-
-              <div class="card">
-                <!--image from https://www.tasteofhome.com/recipes/strawberry-shortcake/ -->
-                <img src="images/chocolatesaltedcaramelbars.jpg" alt="chocolatesaltedcaramelbars" class="subsection_heading " style="width:100%">
-                <h2>Salted Caramel Bars</h2>
-                <p>$3.99</p>
-                <p>A A fluffy shortcakse topped with whipped cream and fresh strawberries </p>
-                <p class="button-5-card">Add to Cart</p>
-              </div>
-                  </div>
-          </section>
-        </div>
-</div>
-<script>
-let mainNav=document.getElementById('main-nav');
-let navbarToggle=document.getElementById('navbar-toggle');
-
-navbarToggle.addEventListener('click',function(){
-
-    if(this.classList.contains('active')){
-        mainNav.style.display="none";
-        this.classList.remove('active');
-    }
-    else{
-        mainNav.style.display="flex";
-        this.classList.add('active');
-
-    }
-});
-</script>
 </body>
 </html>

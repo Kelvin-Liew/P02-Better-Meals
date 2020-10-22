@@ -8,27 +8,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="css/main.css" rel="stylesheet">
+    <script src="js/main.js"></script>
 
     <!-- Squares -->
 
   </head>
       <body>
-        <nav>
-   <!--  <div class="wrapper">
-      <div class="sidebar">
-        <a href="https://www.facebook.com/bettermealsca/"><img src="images/logo3.png" alt="New Logo2" class="subsection_heading imagesize" ></a>        <h2>Better Meals</h2>
-        <ul>
-          <li><a href="index.html">Style Guide</a></li>
-          <li><a href="product_page.html">Product Page</a></li>
-          <li><a href="checkout.html">Checkout Cart</a></li>
-          <li><a href="#">Breakfast</a></li>
-          <li><a href="#entrees">Entrees</a></li>
+       
+        <div class="stickyNav" id="menuNav">
+          <li><a href="index.html">Breakfast</a></li>
+          <li><a href="product_page.html">Entrees</a></li>
           <li><a href="#dessert">Dessert</a></li>
-
-        </ul>
-      </div>
-    </div> -->
-    </nav>
+        </div>
+ 
 
 
     <div class="wrapper">
@@ -38,9 +30,6 @@
 
 
       <!-- INTERACTIVE ELEMENTS SECTION -->
-      <section>
-        <h1>Better Meals Menu Template</h1>
-      </section>
 
       <section class="element">
 
@@ -51,7 +40,7 @@
                           <div class="card">
                             <!--image from https://www.jessicagavin.com/french-toast/ -->
                             <img src="images/frenchtoast.jpg" alt="French Toast" class="subsection_heading" style="width:100%">
-                            <h2>FrenchToast</h2>
+                            <h2>French Toast</h2>
                             <p>$4.99</p>
                             <p>Made with whole grain bread, real butter, and pure Canadian Maple Syrup</p>
                             <p class="button-5-card">Add to Cart</p>
@@ -153,6 +142,21 @@
     </div>
   </div>
 </div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("menuNav");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
 </body>
 
 </html>
