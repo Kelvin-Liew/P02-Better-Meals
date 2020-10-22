@@ -9,11 +9,32 @@
 
     <link href="css/main.css" rel="stylesheet">
     <script src="js/main.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
 
     <!-- Squares -->
 
   </head>
       <body>
+
+
+        <!-- TOP NAVIGATION -->
+            <nav class="navbar">
+            <span id="navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </span>
+              <a href="testnav.html"><div class="logo">
+                  <img  alt="W3Schools" src="images/logo3.png" width="50" height="50">
+              </div></a>
+              <ul id="main-nav">
+                <li>
+                  <a class="one" href="product_page.html">Menu</a>
+                </li>
+                <li>
+                  <a class="one" href="about.html">About Us</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- TOP NAVIGATION -->
 
         <div class="stickyNav" id="menuNav">
           <li><a href="index.html">Breakfast</a></li>
@@ -103,22 +124,13 @@
             </form>
 
             <div class="modal-footer">
-              <input type="submit" class="button-2" value="Proceed To Checkout" style="float:right;border:none;">
+              <a href="checkout.html" class="button-2" style="float:right;border:none;">Procced to Checkout</a>
 
             </div>
           </div>
         </div>
 
 
-
-
-
-
-
-
-      <section>
-        <h1>Better Meals Menu Template</h1>
-      </section>
 
       <section class="element">
 
@@ -230,7 +242,27 @@
               </div>
       </div>
 
+      <script>
+
+      let mainNav=document.getElementById('main-nav');
+      let navbarToggle=document.getElementById('navbar-toggle');
+
+      navbarToggle.addEventListener('click',function(){
+
+          if(this.classList.contains('active')){
+              mainNav.style.display="none";
+              this.classList.remove('active');
+          }
+          else{
+              mainNav.style.display="flex";
+              this.classList.add('active');
+
+          }
+      });</script>
+
+
 <script>
+
 window.onscroll = function() {myFunction()};
 
 var header = document.getElementById("menuNav");
