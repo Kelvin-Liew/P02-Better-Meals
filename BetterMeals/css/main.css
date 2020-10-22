@@ -133,7 +133,7 @@ font-size: 16px;
 }
 
 a{
-  color: blue;
+  color:white;
 }
 
 
@@ -353,7 +353,7 @@ NAVIGATION AND HERO IMAGE
 
 
 
-.topnav {
+/*.topnav {
   overflow: hidden;
   background-color: #333;
 }
@@ -380,8 +380,101 @@ NAVIGATION AND HERO IMAGE
 
 .topnav .icon {
   display: none;
+}*/
+
+a.one{
+  margin-right: 1rem;
 }
 
+.navbar {
+  font-size: 18px;
+  background-color: blue;
+      padding-bottom: 10px;
+}
+
+#main-nav {
+  list-style-type: none;
+  display: none;
+  flex-direction: column;
+}
+
+#main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: white;
+}
+
+
+.logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+#navbar-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+}
+
+#navbar-toggle:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+@media screen and (min-width: 768px) {
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+
+  #main-nav {
+    display: flex !important;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .active {
+    display: block;
+  }
+
+  #main-nav li {
+    margin: 0;
+  }
+
+  .nav-links {
+    margin-left: 40px;
+  }
+
+  .logo {
+    display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+  }
+
+  #navbar-toggle {
+    display: none;
+  }
+
+} 
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
 .hero-image{
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   /* background-image:url("images/banner1.jpg"); */

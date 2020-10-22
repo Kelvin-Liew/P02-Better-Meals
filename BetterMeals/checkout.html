@@ -7,25 +7,30 @@
     <title>Better Meals Style Guide</title>
 
     <link href="css/main.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
 
     <!-- Squares -->
 
   </head>
       <body>
-        <nav>
-    <div class="wrapper">
-      <div class="sidebar">
-        <a href="https://www.facebook.com/bettermealsca/"><img src="images/logo3.png" alt="New Logo2" class="subsection_heading imagesize" ></a>        <h2>Better Meals</h2>
-        <ul>
-          <li><a href="index.html">Style Guide</a></li>
-          <li><a href="product_page.html">Product Page</a></li>
-          <li><a href="checkout.html">Checkout Cart</a></li>
-          <li><a href="#">Checkout Form</a></li>
-          <li><a href="#payment">Payment Form</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <!-- TOP NAVIGATION -->
+    <nav class="navbar">
+    <span id="navbar-toggle">
+        <i class="fas fa-bars"></i>
+    </span>
+      <a href="testnav.html"><div class="logo">
+          <img  alt="W3Schools" src="images/logo3.png" width="50" height="50">
+      </div></a>    
+      <ul id="main-nav">
+        <li>
+          <a class="one" href="product_page.html">Menu</a>
+        </li>
+        <li>
+          <a class="one" href="about.html">About Us</a>
+        </li>
+    </ul>
+</nav>
+<!-- TOP NAVIGATION -->
 
 
     <div class="wrapper">
@@ -35,14 +40,11 @@
 
 
       <!-- INTERACTIVE ELEMENTS SECTION -->
-      <section>
-        <h1>Checkout Cart & Payment</h1>
-      </section>
-
+    
           <!-- COMBINED ELEMENTS SECTION // -->
 
 
-
+        <h3 class="section_heading">Your Cart</h3>
             <form class="checkoutform section_heading">
             <table id="t01">
               <tr>
@@ -86,7 +88,7 @@
           </form>
 
 
-            <section id="payment" class="element">
+            <section id="payment">
               <h3 class="section_heading">Payment Form</h3>
 
 
@@ -139,6 +141,24 @@
     </div>
   </div>
 </div>
+
+<script>
+
+let mainNav=document.getElementById('main-nav');
+let navbarToggle=document.getElementById('navbar-toggle');
+
+navbarToggle.addEventListener('click',function(){
+
+    if(this.classList.contains('active')){
+        mainNav.style.display="none";
+        this.classList.remove('active');
+    }
+    else{
+        mainNav.style.display="flex";
+        this.classList.add('active');
+
+    }
+});</script>
 </body>
 
 </html>
