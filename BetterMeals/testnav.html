@@ -62,7 +62,7 @@
 
 
       <div class="parent">
-        <div class="div1"> <img  src="images/frenchtoast.jpg" alt="French Toast" style="width:100%"></div>
+        <div class="div1"> <img  src="images/frenchtoast.jpg" alt="French Toast" style="width:60%"></div>
         <div class="div2"> <h1 class="subsection_heading">Breakfast Croissant</h1>
           <p>Baked Croissant Breakfast Sandwiches made with fluffy and cheesy scrambled eggs, sliced ham, sharp cheddar cheese, on buttery croissants. Easy to make-ahead and freeze for grab-n-go meals too!  </p></div>
         <div class="div3"> </div>
@@ -250,7 +250,22 @@
           </section>
         </div>
 </div>
+<script>
+let mainNav=document.getElementById('main-nav');
+let navbarToggle=document.getElementById('navbar-toggle');
 
+navbarToggle.addEventListener('click',function(){
 
+    if(this.classList.contains('active')){
+        mainNav.style.display="none";
+        this.classList.remove('active');
+    }
+    else{
+        mainNav.style.display="flex";
+        this.classList.add('active');
+
+    }
+});
+</script>
 </body>
 </html>
