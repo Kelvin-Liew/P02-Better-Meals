@@ -9,38 +9,18 @@
 
     <link href="css/main.css" rel="stylesheet">
     <script src="js/main.js"></script>
-    <script src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
 
     <!-- Squares -->
 
   </head>
       <body>
 
-        <!-- TOP NAVIGATION -->
-    <nav class="navbar">
-    <span id="navbar-toggle">
-        <i class="fas fa-bars"></i>
-    </span>
-       <a href="testnav.html"><div class="logo">
-          <img  alt="W3Schools" src="images/logo3.png" width="50" height="50">
-        </div></a>
-    <ul id="main-nav">
-        <li>
-          <a class="one" href="product_page.html">Menu</a>
-        </li>
-        <li>
-          <a class="one" href="about.html">About Us</a>
-        </li>
-    </ul>
-</nav>
-<!-- TOP NAVIGATION -->
-       
         <div class="stickyNav" id="menuNav">
           <li><a href="index.html">Breakfast</a></li>
           <li><a href="product_page.html">Entrees</a></li>
           <li><a href="#dessert">Dessert</a></li>
         </div>
- 
+
 
 
     <div class="wrapper">
@@ -48,18 +28,111 @@
 
     <div class="content_padding">
 
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header ">
+            <span class="close">&times;</span>
+          </div>
+          <div class="modal-body">
+
+
+            <div class="parent">
+              <div class="div1"> <img  src="images/frenchtoast.jpg" alt="French Toast" style="width:100%"></div>
+              <div class="div2"> <h1 class="subsection_heading">Breakfast Croissant</h1>
+                <p>Baked Croissant Breakfast Sandwiches made with fluffy and cheesy scrambled eggs, sliced ham, sharp cheddar cheese, on buttery croissants. Easy to make-ahead and freeze for grab-n-go meals too!  </p></div>
+              <div class="div3"> </div>
+              <div class="div4"><h1 class="subsection_heading">420</h1>calories </div>
+              <div class="div5"> <h1 class="subsection_heading">40g</h1>carbs</div>
+              <div class="div6"> <h1 class="subsection_heading">13g</h1>sodium</div>
+            </div>
+          </div>
+          <div class="modal-footer">
+
+          </div>
+        </div>
+      </div>
+      <!-- Trigger/Open The Modal -->
+
+      <section id="myBtn"></section>
+        <!-- The Modal 2 -->
+        <div id="myModal2" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header ">
+              <span id="closeBtn" class="close">&times;</span>
+            </div>
+
+              <form class="checkoutform">
+              <table id="t01">
+                <tr>
+                  <th style="width:20%; "><p class="checkoutheader" style="padding-left:20%">Product</p></th>
+                  <th style="width:65%"></th>
+                  <th style="width:15%"><p class="checkoutheader">Price</p></th>
+                  <th style="width:10%"><p class="checkoutheader">Quantity</p></th>
+                </tr>
+                <tr>
+                  <td><img src="images/frenchtoast.jpg" alt="French Toast" class="subsection_heading" ></td>
+                  <td><h3>French Toast</h3><p>Ingredients</p></td>
+                  <td><p class="sm">$5.99</p></td>
+                  <td><input type="number" id="ftquantity" name="ftquantity" placeholder="0" style="width:100%"></td>
+                </tr>
+                <tr>
+                  <td ><img src="images/steakandbeans.jpg" alt="Steak and Beans" class="subsection_heading"></td>
+                  <td><h3>Steak &amp; Beans</h3><p>Ingredients</p></td>
+                  <td><p class="sm">$6.99</p></td>
+                  <td><input type="number" id="sbquantity" name="sbquantity" placeholder="0" style="width:100%;border-color:#E6E6E6"></td>
+                </tr>
+                <tr>
+                  <td ><img src="images/strawberryshortcake.jpg" alt="strawberryshortcake" class="subsection_heading" ></td>
+                  <td><h3>Strawberry Shortcake</h3><p>Ingredients</p></td>
+                  <td><p class="sm">$3.99</p></td>
+                  <td><input type="number" id="sscquantity" name="sscquantity" placeholder="0" style="width:100%"></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td><p style="float:right">Total:</p></td>
+                  <td>$16.96</td>
+                </tr>
+
+              </table>
+            </form>
+
+            <div class="modal-footer">
+              <input type="submit" class="button-2" value="Proceed To Checkout" style="float:right;border:none;">
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+      <section>
+        <h1>Better Meals Menu Template</h1>
+      </section>
+
       <section class="element">
 
 
+
                   <h3 class="section_heading">Breakfast Items</h3>
-                  <div class="card_group">
+                  <div class="card_group ">
                           <div class="card">
                             <!--image from https://www.jessicagavin.com/french-toast/ -->
-                            <img src="images/frenchtoast.jpg" alt="French Toast" class="subsection_heading" style="width:100%">
-                            <h2>French Toast</h2>
+                            <a id="myImg"> <img  src="images/frenchtoast.jpg" alt="French Toast" class="subsection_heading productimage " style="width:100%"> </a>
+                            <h2>FrenchToast</h2>
                             <p>$4.99</p>
                             <p>Made with whole grain bread, real butter, and pure Canadian Maple Syrup</p>
-                            <p class="button-5-card">Add to Cart</p>
+                            <button id="myAdd2cart" class="button-5-card">Add to Cart</button>
                           </div>
 
                           <div class="card">
@@ -154,27 +227,10 @@
                     </div>
                         </div>
                 </section>
-
-    </div>
-  </div>
-</div>
+              </div>
+      </div>
 
 <script>
-  let mainNav=document.getElementById('main-nav');
-let navbarToggle=document.getElementById('navbar-toggle');
-
-navbarToggle.addEventListener('click',function(){
-
-    if(this.classList.contains('active')){
-        mainNav.style.display="none";
-        this.classList.remove('active');
-    }
-    else{
-        mainNav.style.display="flex";
-        this.classList.add('active');
-
-    }
-});
 window.onscroll = function() {myFunction()};
 
 var header = document.getElementById("menuNav");
