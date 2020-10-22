@@ -87,23 +87,29 @@ code {
   HEADING AND PARAGRAPH ELEMENTS----------------
 */
 
+/* I changed h1,h2,h3,h4 p,  */
 h1{
   font-family: Epilogue;
-  font-size: 2rem;
+  font-size: 3rem; 
 }
 
 
 h2 {
   font-family: Epilogue;
+  margin-left: 2rem;
 }
 
 
 h3 {
   font-family: Epilogue;
+  margin-left: 2rem;
+
 }
 
 h4 {
   font-family: Epilogue;
+  margin-left: 2rem;
+
 }
 
 h5{
@@ -114,6 +120,8 @@ p {
   font-family: roboto;
   margin-top: 0;
   padding-bottom: 1.0rem;
+  margin-left: 2rem;
+
 }
 
 p.width-80{
@@ -133,7 +141,7 @@ font-size: 16px;
 }
 
 a{
-  color: blue;
+  color: black;
 }
 
 
@@ -1159,6 +1167,7 @@ td{
 
 
 
+
 /*brand_elements*/
 
 
@@ -1225,7 +1234,7 @@ via : https://www.w3schools.com/howto/howto_css_modals.asp
   margin: auto;
   padding: 0;
   border: 1px solid #888;
-  width: 800px;
+  width: 80%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -1306,16 +1315,16 @@ grid-row-gap: 0px;
 }
 
 .modal-header {
-  padding: 10px 16px 40px;
-  background-color: #72bcd4;
+  padding: 2px 16px;
+  background-color: #5cb85c;
   color: white;
 }
 
 .modal-body {padding: 2px 16px;}
 
 .modal-footer {
-  padding: 10px 10px 50px;
-  background-color: #E6E6E6;
+  padding: 2px 16px;
+  background-color: #5cb85c;
   color: white;
 }
 
@@ -1337,24 +1346,49 @@ MEDIA QUERY -----------------------------------
 
 
 
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
+@media screen and (min-width: 768px) {
 
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
   }
-  .topnav.responsive a {
-    float: none;
+
+  #main-nav {
+    display: flex !important;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .active {
     display: block;
-    text-align: left;
   }
+
+  #main-nav li {
+    margin: 0;
+  }
+
+  .nav-links {
+    margin-left: 40px;
+  }
+
+  .logo {
+    display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+  }
+
+  #navbar-toggle {
+    display: none;
+  }
+
+} 
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
 }
