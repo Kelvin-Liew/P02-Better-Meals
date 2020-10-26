@@ -1462,10 +1462,10 @@ MEDIA QUERY -----------------------------------
 @media (max-width: 1000px) {
 
 
-.paymentwidth{
+/* .paymentwidth{
   width:1000px;
   flex: auto;
-	}
+	} */
 }
 
 
@@ -1486,9 +1486,8 @@ MEDIA QUERY -----------------------------------
     position: relative;
     background-color: #fefefe;
     margin: auto;
-    padding: 20px;
     border: 1px solid #888;
-    width: 565px;
+    width: 375px;
   }
 
 /*Modal grid*/
@@ -1499,16 +1498,27 @@ grid-template-columns: repeat(3, 1fr);
 grid-template-rows: repeat(6, 1fr);
 grid-column-gap: 0px;
 grid-row-gap: 0px;
+
+grid-template-rows: 1fr 1fr 0.5fr 1fr 0.5fr 0.2fr;
+}
+
+.parent h1{
+ text-align: center;
 }
 
 .parent .div1 { grid-area: 1 / 1 / 4 / 4;
 padding: 20px 0 20px;
 }
 .parent .div2 { grid-area: 4 / 1 / 5 / 4; }
-.parent .div3 { grid-area: 6 / 1 / 7 / 4; }
-.parent .div4 { grid-area: 5 / 1 / 6 / 2; }
-.parent .div5 { grid-area: 5 / 2 / 6 / 3; }
-.parent .div6 { grid-area: 5 / 3 / 6 / 4; }
+.parent .div3 { grid-area: 6 / 1 / 7 / 4;
+row
+}
+.parent .div4 { grid-area: 5 / 1 / 6 / 2;
+ text-align: center;}
+.parent .div5 { grid-area: 5 / 2 / 6 / 3;
+ text-align: center;}
+.parent .div6 { grid-area: 5 / 3 / 6 / 4;
+ text-align: center;}
 }
 
 @media screen and (max-width: 600px) {
