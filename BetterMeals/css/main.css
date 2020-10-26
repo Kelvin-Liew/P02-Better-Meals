@@ -1378,22 +1378,22 @@ grid-row-gap: 0px;
 }
 
 
-.div1 {
+.parent .div1 {
   grid-area: 1 / 1 / 6 / 4;
   padding: 20px;
 }
-.div2 {
+.parent .div2 {
    grid-area: 2 / 4 / 4 / 7;
  }
-.div3 {
+.parent .div3 {
   grid-area: 1 / 4 / 2 / 7;
 }
-.div4 {
+.parent .div4 {
   grid-area: 4 / 4 / 5 / 5;
 }
 
-.div5 { grid-area: 4 / 5 / 5 / 6; }
-.div6 { grid-area: 4 / 6 / 5 / 7; }
+.parent .div5 { grid-area: 4 / 5 / 5 / 6; }
+.parent .div6 { grid-area: 4 / 6 / 5 / 7; }
 
 
 
@@ -1476,6 +1476,39 @@ MEDIA QUERY -----------------------------------
     float: right;
     display: block;
   }
+}
+
+@media screen and (max-width: 768px) {
+
+
+
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 565px;
+  }
+
+/*Modal grid*/
+
+.parent {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(6, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.parent .div1 { grid-area: 1 / 1 / 4 / 4;
+padding: 20px 0 20px;
+}
+.parent .div2 { grid-area: 4 / 1 / 5 / 4; }
+.parent .div3 { grid-area: 6 / 1 / 7 / 4; }
+.parent .div4 { grid-area: 5 / 1 / 6 / 2; }
+.parent .div5 { grid-area: 5 / 2 / 6 / 3; }
+.parent .div6 { grid-area: 5 / 3 / 6 / 4; }
 }
 
 @media screen and (max-width: 600px) {
