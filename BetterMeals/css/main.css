@@ -481,7 +481,7 @@ a.one{
    /* Set a specific height  */
   height: 80vh;
 
-  / Position and center the image to scale nicely on all screens */
+ /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
