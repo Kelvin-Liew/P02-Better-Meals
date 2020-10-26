@@ -37,30 +37,59 @@
 
 <div class="hero-image">
   <div class="hero-text">
+<!-- <<<<<<< HEAD -->
     <h1 class ="alternate_color">I am John Doe</h1>
     <p>And I'm a Photographer</p>
+<!-- ======= -->
+    <h1 class ="alternate_color">Meals prepared just how you like it.</h1>
+    <p>Call us for any questions about the menu</p>
+<!-- >>>>>>> b0d69734c6ecfe8e532b8804c8f6a95f7cc3fe2c -->
     <a href="about.html" class="button-1-lg">Contact Us</a>
     
 
   </div>
 </div>
-<script>
 
-let mainNav=document.getElementById('main-nav');
-let navbarToggle=document.getElementById('navbar-toggle');
+<div class="card_group ">
+        <div class="homepagecard">
+          <!--image from https://www.jessicagavin.com/french-toast/ -->
+          <a id="myImg"> <img  src="images/bettermeals_building.jpg" alt="Building" class="subsection_heading productimage " style="width:100%; height:70%"> </a>
+          <h2>About</h2><br>
+          <p>Learn more about Better Meals goals, values and meet our Team!</p>
+        </div>
 
-navbarToggle.addEventListener('click',function(){
+        <div class="homepagecard">
+          <!--image from https://www.jessicagavin.com/french-toast/ -->
+          <img src="images/omelet.jpg" alt="Ham and Swiss Omelet" class="subsection_heading" style="width:100%">
+          <h2>Menu</h2><br>
+          <p>View the great selection of food to meet your dietary needs</p>
+        </div>
 
-    if(this.classList.contains('active')){
-        mainNav.style.display="none";
-        this.classList.remove('active');
-    }
-    else{
-        mainNav.style.display="flex";
-        this.classList.add('active');
+        <div class="homepagecard">
+          <!--image from hhttps://www.tasteofhome.com/recipes/beef-and-beans/ -->
+          <img src="images/contact_us.png" alt="Entrees" class="subsection_heading" style="width:100%">
+          <h2>Contact Us</h2><br>
+          <p>Got a Question? Feel free to contact us about any inquiries</p>
+        </div>
+  </div>
 
-    }
-});</script>
+  <script>
+
+  let mainNav=document.getElementById('main-nav');
+  let navbarToggle=document.getElementById('navbar-toggle');
+
+  navbarToggle.addEventListener('click',function(){
+
+      if(this.classList.contains('active')){
+          mainNav.style.display="none";
+          this.classList.remove('active');
+      }
+      else{
+          mainNav.style.display="flex";
+          this.classList.add('active');
+
+      }
+  });</script>
 
 <div class="card_group ">
         <div class="homepagecard">
