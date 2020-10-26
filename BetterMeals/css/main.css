@@ -236,7 +236,7 @@ height: 50px;
 }
 
 .wrapper .main_content{
-    width: 100%;
+  width: 100%;
     /* margin-left: 200px;*/
      padding-left: 5rem;
      padding-right: 5rem;
@@ -1529,6 +1529,7 @@ padding: 20px 0 20px;
     text-align: left;
   }
 }
+<<<<<<< HEAD
 
 
 .hero-image{
@@ -1589,3 +1590,5 @@ padding: 20px 0 20px;
    padding: 10px;
 
 }
+=======
+>>>>>>> parent of f7a81e1... Responsiveness Changes
