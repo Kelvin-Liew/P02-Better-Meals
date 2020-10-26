@@ -478,7 +478,7 @@ a.one{
 .hero-image{
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   /* background-image:url("images/banner1.jpg"); */
-  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('../images/banner1.jpg');
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('images/banner1.jpg');
   /* Set a specific height */
   height: 90vh;
 
@@ -497,16 +497,6 @@ a.one{
   left: 50%;
   transform: translate(-50%, -50%);
   color: black;
-  width: 80%;
-  
-}
-
-.hero-text h1{
-  margin-bottom: 10px;
-}
-
-.hero-text p{
-  color: white;
 }
 
 
@@ -552,7 +542,6 @@ a.one{
 	padding: 0.5rem 0.75rem;
 	text-decoration: none;
 	transition: background-color 0.5s ease-out;
-  
 
 }
 
