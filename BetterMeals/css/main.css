@@ -236,7 +236,7 @@ height: 50px;
 }
 
 .wrapper .main_content{
-  width: 100%;
+    width: 100%;
     /* margin-left: 200px;*/
      padding-left: 5rem;
      padding-right: 5rem;
@@ -1534,3 +1534,22 @@ row
     text-align: left;
   }
 }
+
+@media screen and (max-width: 1029px){
+  .menu_section{
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 800px){
+  .card{
+    min-width: 290px;
+  }
+
+  .wrapper{
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
