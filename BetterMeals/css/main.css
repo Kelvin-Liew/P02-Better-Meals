@@ -1190,6 +1190,7 @@ margin: 0 0 0 20px;
 
 
 
+
 .row {
   display: inline-flex;
   flex-wrap: wrap;
@@ -1478,7 +1479,6 @@ grid-row-gap: 0px;
 
 
 
-
 /*
 MEDIA QUERY -----------------------------------
 
@@ -1570,8 +1570,18 @@ padding: 20px 0 20px;
     min-width: 290px;
   }
 
+  .menu_section{text-align: center;}
+
   .wrapper{
     margin-right: 0;
     margin-left: 0;
+  }
+
+  .wrapper .main_content{
+       padding: 0;
+  }
+
+  .wrapper .main_content .content_padding{
+    padding:0;
   }
 }
