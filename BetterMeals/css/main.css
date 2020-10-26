@@ -477,12 +477,11 @@ a.one{
 }
 .hero-image{
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  /* background-image:url("images/banner1.jpg"); */
-  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('images/banner1.jpg');
-  /* Set a specific height */
-  height: 90vh;
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('../images/banner1.jpg');
+   /* Set a specific height  */
+  height: 80vh;
 
-  /* Position and center the image to scale nicely on all screens */
+  / Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -497,6 +496,16 @@ a.one{
   left: 50%;
   transform: translate(-50%, -50%);
   color: black;
+  width: 80%;
+
+}
+
+.hero-text h1{
+  margin-bottom: 10px;
+}
+
+.hero-text p{
+  color: white;
 }
 
 
@@ -1054,6 +1063,21 @@ width:100%;
 
 }
 
+.homepagecard{
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+   max-width: 290px;
+   box-sizing: border-box;
+   margin-left: inherit;
+   margin-right:10px;
+   margin-bottom: 50px;
+   margin-top: 40px;
+   display: inline-block;
+   text-align: center;
+   float: left;
+   padding: 10px;
+
+}
+
 
 /*
     CHECK BOXES VIA --------------
@@ -1511,7 +1535,6 @@ padding: 20px 0 20px;
 }
 .parent .div2 { grid-area: 4 / 1 / 5 / 4; }
 .parent .div3 { grid-area: 6 / 1 / 7 / 4;
-row
 }
 .parent .div4 { grid-area: 5 / 1 / 6 / 2;
  text-align: center;}
@@ -1552,4 +1575,3 @@ row
     margin-left: 0;
   }
 }
-
