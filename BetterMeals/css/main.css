@@ -429,7 +429,7 @@ a.one{
   color: rgba(255, 255, 255, 1);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
 
   .navbar {
     display: flex;
@@ -1377,7 +1377,6 @@ via : https://www.w3schools.com/howto/howto_css_modals.asp
   animation-duration: 0.4s
 }
 
-
 /*GRID FOR MENU MODAL CARD*/
 
 .parent {
@@ -1410,10 +1409,7 @@ grid-row-gap: 0px;
 
 
 /* Add Animation */
-@-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0}
   to {top:0; opacity:1}
-}
 
 @keyframes animatetop {
   from {top:-300px; opacity:0}
@@ -1522,7 +1518,6 @@ padding: 20px 0 20px;
 }
 .parent .div2 { grid-area: 4 / 1 / 5 / 4; }
 .parent .div3 { grid-area: 6 / 1 / 7 / 4;
-row
 }
 .parent .div4 { grid-area: 5 / 1 / 6 / 2;
  text-align: center;}
@@ -1546,21 +1541,62 @@ row
   }
 }
 
-@media screen and (max-width: 1029px){
-  .menu_section{
-    text-align: center;
-  }
+
+.hero-image{
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read /
+  / background-image:url("images/banner1.jpg"); /
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('../images/banner1.jpg');
+  / Set a specific height /
+  height: 90vh;
+
+  / Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-decoration: none;
+  height: 80vh;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  width: 80%;
+  
 
 }
 
-@media screen and (max-width: 800px){
-  .card{
-    min-width: 290px;
-  }
-
-  .wrapper{
-    margin-right: 0;
-    margin-left: 0;
-  }
+.hero-text h1{
+  margin-bottom: 10px;
 }
 
+.hero-text p{
+  color: white;
+}
+/* .logo{
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  bottom: 10px;
+} */
+
+/* chamira code for the home page */
+
+.homepagecard{
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+   max-width: 290px;
+   box-sizing: border-box;
+   margin-left: inherit;
+   margin-right:10px;
+   margin-bottom: 50px;
+   margin-top: 40px;
+   display: inline-block;
+   text-align: center;
+   float: left;
+   padding: 10px;
+
+}
