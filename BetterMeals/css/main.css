@@ -1784,6 +1784,11 @@ padding: 20px 0 20px;
   }
 }
 
+@media screen and (max-width: 400px){
+
+
+}
+
 
 @media screen and (max-width: 575px){
 
@@ -1795,6 +1800,7 @@ padding: 20px 0 20px;
     padding:0;
   }
 
+  
 }
 
 .section_heading{
