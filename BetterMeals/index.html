@@ -2,16 +2,41 @@
 <html lang="en">
 
   <head>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>Better Meals Style Guide</title>
     <script src="js/main.js"></script>
     <link href="css/main.css" rel="stylesheet">
-
+    <script src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
     <!-- Squares -->
 
   </head>
   <body>
+
+    <!-- TOP NAVIGATION -->
+        <nav class="navbar">
+        <span id="navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+          <a href="testnav.html"><div class="logo">
+              <img  alt="W3Schools" src="images/logo3.png" width="50" height="50">
+          </div></a>
+          <ul id="main-nav">
+            <li>
+              <a class="one" href="index.html">Style Guide</a>
+            </li>
+            <li>
+              <a class="one" href="product_page.html">Menu</a>
+            </li>
+            <li>
+              <a class="one" href="about.html">About Us</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- TOP NAVIGATION -->
+
+
+
     <!--old navigation
     <nav>
       <div class="wrapper">
@@ -161,7 +186,7 @@
             </ul>
               <h4 class=subsection_heading>Product Card Buttons:</h4>
             <ul>
-              <li class="section_heading"><a href="top" class="button-5-card">Button 5 Card</a> <a href="top" class="button-5-card">Button 5 Card</a> <a href="top" class="button-5-card">Button 5 Card</a></li>
+              <li class="section_heading"><a href="top" class="button-5-card">Button 5 Card</a> <a href="top" class="button-5-card">Button 5 Card</a></li>
             </ul>
               <h4 class=subsection_heading>Wide Buttons:</h4>
             <ul>
@@ -742,8 +767,8 @@
                <img src="images/breakfastsandwich.jpg" alt="Breakfast sandwich" class="subsection_heading productimage" width="310" height="310">
                <br><br>
                <h4 class="subsection_heading">Banner Images</h4>
-               <img src="images/banner1.jpg" alt="banner1" class="subsection_heading" width="1000" height="666">
-               <img src="images/banner2.jpg" alt="banner2" class="subsection_heading" width="1000" height="666">
+               <img src="images/banner1.jpg" alt="banner1" class="subsection_heading" width="100%" height="100%">
+               <img src="images/banner2.jpg" alt="banner2" class="subsection_heading" max-width="1000" width="100%" height="100%">
 
                <h4 class="subsection_heading">Brand Logo Orginal</h4>
                <img src="images/logo.png" alt="Original Logo" class="subsection_heading ">
@@ -811,6 +836,25 @@
     </div>
   </div>
 </div>
+
+<script>
+
+let mainNav=document.getElementById('main-nav');
+let navbarToggle=document.getElementById('navbar-toggle');
+
+navbarToggle.addEventListener('click',function(){
+
+    if(this.classList.contains('active')){
+        mainNav.style.display="none";
+        this.classList.remove('active');
+    }
+    else{
+        mainNav.style.display="flex";
+        this.classList.add('active');
+
+    }
+});</script>
+
 </body>
 
 </html>
