@@ -22,29 +22,15 @@ window.onload = function(){
 
 	var header = document.getElementById("menuNav");
 
-	var sticky = 5;
+
 
 	// if (header !== undefined){
 	// 	console.log('you');
 	// }
 
-	if (sticky !== undefined){
-		console.log('me');
-	}
+	
 
-//new stuff
-window.onscroll = function() {myFunction()};
 
-var header = document.getElementById("menuNav");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
 
 
 
@@ -119,15 +105,5 @@ function myFunction() {
 	  }
 	}
 
-	function makeSticky() {
-	  if (window.pageYOffset > sticky) {
-	    header.classList.add("sticky");
-	    console.log('Hello');
-	  } else {
-	    header.classList.remove("sticky");
-	    console.log('goodbye');
-	  }
-	}
-
-	window.onscroll = function(){makeSticky()};
+	
 };
