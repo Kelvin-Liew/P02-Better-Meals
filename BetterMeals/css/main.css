@@ -25,6 +25,7 @@ body {
   background-color:#f3f5f9;
     vertical-align: middle;
       margin: 0;
+      word-wrap: break-word;
 }
 
 
