@@ -32,8 +32,61 @@ window.onload = function(){
 		console.log('me');
 	}
 
+//new stuff
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("menuNav");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
 
 
+
+//Main Nav JS
+
+function myFunction() {
+	var x = document.getElementById("myTopnav");
+	if (x.className === "topnav") {
+		x.className += " responsive";
+	} else {
+		x.className = "topnav";
+	}
+}
+
+
+
+      let mainNav=document.getElementById('main-nav');
+      let navbarToggle=document.getElementById('navbar-toggle');
+
+      navbarToggle.addEventListener('click',function(){
+
+          if(this.classList.contains('active')){
+              mainNav.style.display="none";
+              this.classList.remove('active');
+          }
+          else{
+              mainNav.style.display="flex";
+              this.classList.add('active');
+
+          }
+      });
+
+			//main nav js
+
+
+
+
+
+
+
+
+//new stuff
 
 	// When the user clicks the button, open the modal
 	btn.onclick = function() {
@@ -66,28 +119,15 @@ window.onload = function(){
 	  }
 	}
 
-	window.onscroll = function(){makeSticky()};
-
-};
-
-
-
-function myFunction() {
-	var x = document.getElementById("myTopnav");
-	if (x.className === "topnav") {
-		x.className += " responsive";
-	} else {
-		x.className = "topnav";
+	function makeSticky() {
+	  if (window.pageYOffset > sticky) {
+	    header.classList.add("sticky");
+	    console.log('Hello');
+	  } else {
+	    header.classList.remove("sticky");
+	    console.log('goodbye');
+	  }
 	}
-}
 
-
-function makeSticky() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-    console.log('Hello');
-  } else {
-    header.classList.remove("sticky");
-    console.log('goodbye');
-  }
-}
+	window.onscroll = function(){makeSticky()};
+};
