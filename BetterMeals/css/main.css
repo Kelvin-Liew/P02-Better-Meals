@@ -157,7 +157,7 @@ a{
 
 
 a:active{
-  font-size: 1 rem;
+  font-size: 1rem;
   color: white;
   font-weight: bold;
 }
@@ -1423,9 +1423,6 @@ td{
   margin-bottom: 10px;
   text-align: center;
 }
-.requestDetails:selected{
-  border-bottom: 2px solid grey;
-}
 
 
 #t01{
@@ -1987,10 +1984,6 @@ padding: 20px 0 20px;
   }
 }
 
-@media screen and (max-width: 400px){
-
-
-}
 
 
 @media screen and (max-width: 575px){
