@@ -544,82 +544,85 @@
               <br>
 
 
-              <form class="checkoutform">
-              <table id="t01">
-                <tr>
-                  <th style="width:20%; "><p class="checkoutheader" style="padding-left:20%">Product</p></th>
-                  <th style="width:65%"></th>
-                  <th style="width:15%"><p class="checkoutheader">Price</p></th>
-                  <th style="width:10%"><p class="checkoutheader">Quantity</p></th>
-                </tr>
-                <tr>
-                  <td><img src="images/frenchtoast.jpg" alt="French Toast" class="subsection_heading" ></td>
-                  <td><h3>French Toast</h3><p>Ingredients</p></td>
-                  <td><p class="sm">$5.99</p></td>
-                  <td><input type="number" id="ftquantity" name="ftquantity" placeholder="0" style="width:100%"></td>
-                </tr>
-                <tr>
-                  <td ><img src="images/steakandbeans.jpg" alt="Steak and Beans" class="subsection_heading"></td>
-                  <td><h3>Steak &amp; Beans</h3><p>Ingredients</p></td>
-                  <td><p class="sm">$6.99</p></td>
-                  <td><input type="number" id="sbquantity" name="sbquantity" placeholder="0" style="width:100%;border-color:#E6E6E6"></td>
-                </tr>
-                <tr>
-                  <td ><img src="images/strawberryshortcake.jpg" alt="strawberryshortcake" class="subsection_heading" ></td>
-                  <td><h3>Strawberry Shortcake</h3><p>Ingredients</p></td>
-                  <td><p class="sm">$3.99</p></td>
-                  <td><input type="number" id="sscquantity" name="sscquantity" placeholder="0" style="width:100%"></td>
-                </tr>
-                <tr>
-                  <th></th>
-                  <th></th>
-                  <th><input type="submit" class="button-2" value="Proceed To Checkout" style="float:right;border:none;"></th>
-                  <th><input type="reset" class="button-4" value="Reset"></th>
-                </tr>
-              </table>
-            </form>
-
-              <div class="orderDetailsTitle"><h4 class="subsection_heading_reverse"><label for="orderDetails">Special Requests</label></h4></div><br>
-              <textarea class="requestDetails" id="orderDetails" name="orderDetails" placeholder="Tell us any special requests for your order"></textarea> <!-- Text Area -->
-              <input type="submit" class="button-2" value="Add Special Request">
-
-            </section>
-
-            <h3 class="section_heading">Modal Buttons</h3>
-
-            <h4>CSS selector:</h4>
-            <!-- Trigger/Open The Modal -->
-            <button id="myBtn">Open Modal</button>
-
-
-            <!-- The Modal -->
-            <section id="myAdd2cart" ></section>
-            <div id="myModal" class="modal">
-
               <!-- Modal content -->
               <div class="modal-content">
                 <div class="modal-header ">
-                  <span class="close">&times;</span>
+                  <span id="closeBtn" class="close">&times;</span>
                 </div>
-                <div class="modal-body">
 
+                  <form class="checkoutform">
+                  <table id="t01">
+                    <tr>
+                      <th style="width:20%; "><p class="checkoutheader" style="padding-left:20%">Product</p></th>
+                      <th style="width:65%"></th>
+                      <th style="width:15%"><p class="checkoutheader">Price</p></th>
+                      <th style="width:10%"><p class="checkoutheader">Quantity</p></th>
+                    </tr>
+                    <tr>
+                      <td><img src="images/frenchtoast.jpg" alt="French Toast" class="subsection_heading" ></td>
+                      <td><h3>French Toast</h3><p>Ingredients</p></td>
+                      <td><p class="sm">$5.99</p></td>
+                      <td><input type="number" id="ftquantity" name="ftquantity" placeholder="0" style="width:100%"></td>
+                    </tr>
+                    <tr>
+                      <td ><img src="images/steakandbeans.jpg" alt="Steak and Beans" class="subsection_heading"></td>
+                      <td><h3>Steak &amp; Beans</h3><p>Ingredients</p></td>
+                      <td><p class="sm">$6.99</p></td>
+                      <td><input type="number" id="sbquantity" name="sbquantity" placeholder="0" style="width:100%;border-color:#E6E6E6"></td>
+                    </tr>
+                    <tr>
+                      <td ><img src="images/strawberryshortcake.jpg" alt="strawberryshortcake" class="subsection_heading" ></td>
+                      <td><h3>Strawberry Shortcake</h3><p>Ingredients</p></td>
+                      <td><p class="sm">$3.99</p></td>
+                      <td><input type="number" id="sscquantity" name="sscquantity" placeholder="0" style="width:100%"></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td><p style="float:right">Total:</p></td>
+                      <td>$16.96</td>
+                    </tr>
 
-                  <div class="parent">
-                    <div class="div1"> <img  src="images/frenchtoast.jpg" alt="French Toast" style="width:100%"></div>
-                    <div class="div2"> <h1 class="subsection_heading">Breakfast Croissant</h1>
-                      <p>Baked Croissant Breakfast Sandwiches made with fluffy and cheesy scrambled eggs, sliced ham, sharp cheddar cheese, on buttery croissants. Easy to make-ahead and freeze for grab-n-go meals too!  </p></div>
-                    <div class="div3"> </div>
-                    <div class="div4"><h1 class="subsection_heading">420</h1>calories </div>
-                    <div class="div5"> <h1 class="subsection_heading">40g</h1>carbs</div>
-                    <div class="div6"> <h1 class="subsection_heading">13g</h1>sodium</div>
-                  </div>
-                </div>
+                  </table>
+                </form>
+
                 <div class="modal-footer">
+                  <a href="checkout.html" class="button-2" style="float:right;border:none;">Procced to Checkout</a>
 
                 </div>
               </div>
-            </div>
 
+              <div class="subsection_heading"></div>
+              <textarea class="requestDetails" id="orderDetails" name="orderDetails" placeholder="Tell us any special requests for your order"></textarea> <!-- Text Area -->
+              <div class="text_center"><input type="submit" class="button-2 text" value="Add Special Request"></div>
+
+            </section>
+
+            <h3 class="section_heading">Modal</h3>
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header ">
+                <span class="close">&times;</span>
+              </div>
+              <div class="modal-body">
+
+
+                <div class="parent">
+                  <div class="div1"> <img  src="images/frenchtoast.jpg" alt="French Toast" style="width:100%"></div>
+                  <div class="div2"> <h1 class="subsection_heading">French Toast</h1>
+                    <p> Fluffy french toast cooked to perfection made with whole grain or white bread. Topped off with classic
+                      Canadian maple syrup and icing sugar. Served on the size are fresh and sliced strawberries.</p></div>
+                  <div class="div3"> </div>
+                  <div class="div4"><h1 class="subsection_heading">420</h1>calories </div>
+                  <div class="div5"> <h1 class="subsection_heading">40g</h1>carbs</div>
+                  <div class="div6"> <h1 class="subsection_heading">13g</h1>sodium</div>
+                </div>
+              </div>
+              <div class="modal-footer">
+
+              </div>
+            </div>
 
         </section>
 
