@@ -82,7 +82,6 @@ function myFunction() {
 }
 
 
-
 function makeSticky() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
