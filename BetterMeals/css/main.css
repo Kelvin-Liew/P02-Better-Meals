@@ -1650,9 +1650,13 @@ textarea {
 .our_benefits{
   margin-bottom: 3em;
 }
+
+/*CITATIONS */
+.citation-section{
+  padding-top: 3em;
+}
 /*
 MEDIA QUERY -----------------------------------
-
 */
 
 
