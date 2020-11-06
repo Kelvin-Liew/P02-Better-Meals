@@ -26,15 +26,7 @@ window.onload = function(){
 
 	var checkModal = 1;
 
-	// if (header !== undefined){
-	// 	console.log('you');
-	// }
 
-	if (sticky !== undefined){
-		console.log('me');
-	}
-
-//new stuff
 window.onscroll = function() {scrollFunction()};
 
 var header = document.getElementById("menuNav");
@@ -70,17 +62,6 @@ function myFunction() {
 
           }
       });
-
-			//main nav js
-
-
-
-
-
-
-
-
-//new stuff
 
 	// When the user clicks the button, open the modal
 	btn.onclick = function() {

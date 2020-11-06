@@ -165,11 +165,9 @@ a:active{
 
 a.visited{
 
-/*  color: purple;*/
 }
 
 a:hover {
-/*  font-weight: bold;*/
   border:none;
 
 }
@@ -188,7 +186,6 @@ h2 a:active{
 
 h2 a.visited{
 
-/*  color: purple;*/
 }
 
 h2 a:hover {
@@ -243,11 +240,6 @@ height: 50px;
   NAVIGATION BAR  ----------------------------------
 */
 
-
-/*side bar wrapper guide from https://codepen.io/RajRajeshDn/pen/LKzZNe,and https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sidenav_fixed
-
-*/
-
 .wrapper{
   display: flex;
     position: relative;
@@ -274,7 +266,6 @@ height: 50px;
 
 .wrapper .main_content{
     width: 100%;
-    /* margin-left: 200px;*/
      padding-left: 5rem;
      padding-right: 5rem;
      padding-top: 1rem;
@@ -292,7 +283,6 @@ height: 50px;
    padding-top: 2rem;
    background: #fff;
    color: #717171;
-   /*border-bottom: 1px solid #e0e4e8;*/
 
 }
 
@@ -315,7 +305,7 @@ height: 50px;
 
 .wrapper .sidebar h2{
   color: #fff;
-  /*text-transform: uppercase;*/
+
   text-align: left;
   margin-bottom: 30px;
   padding-left: 15px;
@@ -390,43 +380,6 @@ box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.25);
   font-weight: bold;
  }
 
-/*
-NEW CSS ---------------------------------
-NAVIGATION AND HERO IMAGE
-
-*/
-
-
-
-
-/*.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.topnav .icon {
-  display: none;
-}*/
 
 a.one{
   margin-right: 1rem;
@@ -526,20 +479,12 @@ a.one{
 .hero_home{
   height: auto;
   background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('../images/banner1.jpg');
-   /* Set a specific height  */
   height: 80vh;
-
-  /* / Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   text-decoration: none;
-}
-
-.hero-image{
-
-
 }
 
 .hero-text {
@@ -575,18 +520,6 @@ a.one{
 
 }
 
-/*.hero_homepage_card{
-
-  max-width: 400px;
-  box-sizing: border-box;
-  display: inline-block;
-  text-align: center;
-
-
-}*/
-
-
-
  .hero-home-text {
   text-align: left;
   position: absolute;
@@ -606,7 +539,6 @@ a.one{
   background-position: center;
   margin-top: 2em;
   margin-bottom: 2em;
-  /*DO NOT add background image url to this class*/
 }
 
 
@@ -615,10 +547,7 @@ a.one{
 .hero_about{
   height: auto;
   background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('../images/banner2.jpg');
-   /* Set a specific height  */
   height: 80vh;
-
-  /* / Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -631,33 +560,6 @@ a.one{
   BUTTON CREATION GUIDE
 */
 
-/*.button {
-	display: inline-block
-  border: none;
-  border-radius: 4px;
-	color: white;
-	background-color: #07872b;
-	font-size: 1rem;;
-
-	/*
-		By setting two values for padding below, we are now specifying different values for the top/bottom and the left/right in that order. This compound declaration can also be used to set different padding values for each of the sides of a box in top, right, bottom, left order. Example:
-		padding: top right bottom left; would be
-		padding: 10rem 5rem 2rem 12rem;
-
-	padding: 0.5rem 0.75rem;
-
-	/*
-		Because our anchor tags have an underline by default, we end up having to remove them for our buttons (by default).
-
-	text-decoration: none;
-
-	/*
-		Unlike our prior transition statement, here we are also adding a type of easing to the compound statement. As a result the order goes transition: property-to-transition length easing-type;
-
-	transition: background-color 0.5s ease-out;
-}
-
-*/
 
 .button-1 {
 	display: inline-block;
@@ -1150,12 +1052,7 @@ a.one{
     display: table;
 }
 
-/*
-    Flex wrapping and justify tutorial via https://getflywheel.com/layout/flexbox-create-modern-card-design-layout/
 
-    Product card learned from https://www.w3schools.com/howto/howto_css_product_card.asp
-
-*/
 .card_group {
     display: flex;
      flex-wrap: wrap;
@@ -1164,12 +1061,6 @@ a.one{
 }
 
 
-
-/*.bannersize{
-
-width:100%;
-
-}*/
 
 .card{
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
@@ -1210,28 +1101,6 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
-
-
-/*
-    CHECK BOXES VIA --------------
-*/
-
-
-/*
-  COMBINED ELEMENTS -------------------
-*/
-
-/*
-  PAYMENT FORM--------------
-*/
-
-/*
-
-  //Form via https://learn.shayhowe.com/html-css/building-forms/
-  some elements learned from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_checkout_form
-
-*/
-*,
 
 *:before,
 
@@ -1292,16 +1161,6 @@ border:none;
   padding: 20px;
 }
 
-/*.account-action .btn {
-  background: linear-gradient(to right, #add8e6 , #72bcd4);
-  border: 0;
-  color: #fff;
-  cursor: pointer;
-  font-weight: bold;
-  float: left;
-  padding: 8px 50px;
-}*/
-
 .account-action label {
 color: #7c7c80;
 font-size: 12px;
@@ -1320,8 +1179,6 @@ margin: 0 0 0 20px;
   font-size: 0.9rem;
   font-style: italic;
 }
-
-
 
 
 .row {
@@ -1483,13 +1340,6 @@ background-color: #E6E6E6 ;
 .productimage:hover{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-/*
-
-MODAL CARD------------------------------------------------------------
-via : https://www.w3schools.com/howto/howto_css_modals.asp
-
-*/
 
 
 /* The Modal (background) */
@@ -1796,15 +1646,6 @@ textarea {
 MEDIA QUERY -----------------------------------
 
 */
-@media (max-width: 1000px) {
-
-
-/* .paymentwidth{
-  width:1000px;
-  flex: auto;
-	} */
-}
-
 
 
 @media screen and (max-width: 1029px){
@@ -2008,9 +1849,3 @@ padding: 20px 0 20px;
   }
 }
 
-
-
-/* Chamira added code for hero images, everything added
-should just have hero_ infront of it. only area this
-should effect is the things infront on the hero image
-section on homepage */

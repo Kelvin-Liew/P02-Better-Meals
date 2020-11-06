@@ -10,8 +10,6 @@ function myFunction() {
 	}
 }
 
-
-
       let mainNav=document.getElementById('main-nav');
       let navbarToggle=document.getElementById('navbar-toggle');
 
