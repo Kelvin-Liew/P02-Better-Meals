@@ -68,25 +68,25 @@ function myFunction() {
 	  modal.style.display = "block";
 	  checkModal = 2;
 	  header.classList.remove("sticky");
-	}
+	};
 
 	add2cart.onclick = function() {
 	  modal2.style.display = "block";
 	  checkModal = 2;
 	  header.classList.remove("sticky");
 
-	}
+	};
 
 	// When the user clicks on <span> (x), close the modal
 	span.onclick = function() {
 	  modal.style.display = "none";
 	  checkModal = 1;
-	}
+	};
 
 	closebtn.onclick = function() {
 	  modal2.style.display = "none";
 	  checkModal = 1;
-	}
+	};
 
 
 
@@ -94,7 +94,7 @@ function myFunction() {
 		modal.style.display = "block";
 		checkModal = 2;
 		header.classList.remove("sticky");
-	}
+	};
 
 	// When the user clicks anywhere outside of the modal, close it
 	window.onclick = function(event) {
@@ -102,7 +102,7 @@ function myFunction() {
 	    modal.style.display = "none";
 	    checkModal = 1;
 	  }
-	}
+	};
 
 	function makeSticky() {
 	  if (window.pageYOffset > sticky && checkModal == 1) {
@@ -112,7 +112,7 @@ function myFunction() {
 	    header.classList.remove("sticky");
 	    
 	  }
-	}
+	};
 
 	window.onscroll = function(){makeSticky()};
 };
