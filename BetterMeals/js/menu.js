@@ -24,6 +24,8 @@ window.onload = function(){
 
 	var sticky = 5;
 
+	var checkModal = 1;
+
 	// if (header !== undefined){
 	// 	console.log('you');
 	// }
@@ -37,14 +39,6 @@ window.onscroll = function() {scrollFunction()};
 
 var header = document.getElementById("menuNav");
 var sticky = header.offsetTop;
-
-function scrollFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
 
 
 
@@ -91,41 +85,51 @@ function myFunction() {
 	// When the user clicks the button, open the modal
 	btn.onclick = function() {
 	  modal.style.display = "block";
+	  checkModal = 2;
+	  header.classList.remove("sticky");
 	}
 
 	add2cart.onclick = function() {
 	  modal2.style.display = "block";
+	  checkModal = 2;
+	  header.classList.remove("sticky");
+
 	}
 
 	// When the user clicks on <span> (x), close the modal
 	span.onclick = function() {
 	  modal.style.display = "none";
+	  checkModal = 1;
 	}
 
 	closebtn.onclick = function() {
 	  modal2.style.display = "none";
+	  checkModal = 1;
 	}
 
 
 
 	img.onclick = function(){
 		modal.style.display = "block";
+		checkModal = 2;
+		header.classList.remove("sticky");
 	}
 
 	// When the user clicks anywhere outside of the modal, close it
 	window.onclick = function(event) {
 	  if (event.target == modal) {
 	    modal.style.display = "none";
+	    checkModal = 1;
 	  }
 	}
 
 	function makeSticky() {
-	  if (window.pageYOffset > sticky) {
+	  if (window.pageYOffset > sticky && checkModal == 1) {
 	    header.classList.add("sticky");
-	    console.log('Hello');
+	    
 	  } else {
 	    header.classList.remove("sticky");
-	    console.log('goodbye');
+	    
 	  }
 	}
 

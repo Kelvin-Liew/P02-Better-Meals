@@ -1863,6 +1863,13 @@ MEDIA QUERY -----------------------------------
     margin-left: 0;
   }
 
+  #checkout-modal{
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    border: 1px solid #888;
+    width: 375px;
+  }
 
 
 }
@@ -1873,7 +1880,7 @@ MEDIA QUERY -----------------------------------
 
 
 
-  .modal-content {
+  .modal-content{
     position: relative;
     background-color: #fefefe;
     margin: auto;
@@ -1994,6 +2001,10 @@ padding: 20px 0 20px;
 
   .wrapper .main_content .content_padding{
     padding:0;
+  }
+
+  #placeholder_modal{
+    margin-left: -15px;
   }
 }
 
