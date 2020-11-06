@@ -116,9 +116,6 @@ h4 {
   font-family: Epilogue;
 }
 
-h5{
-
-}
 
 p {
   font-family: roboto;
@@ -163,9 +160,6 @@ a:active{
 }
 
 
-a.visited{
-
-}
 
 a:hover {
   border:none;
@@ -183,10 +177,6 @@ h2 a:active{
   color:black;
 }
 
-
-h2 a.visited{
-
-}
 
 h2 a:hover {
   color: black;
@@ -1372,6 +1362,20 @@ background-color: #E6E6E6 ;
   animation-duration: 0.4s
 }
 
+.modal-content-placeholder{
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 800px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
 
 /*GRID FOR MENU MODAL CARD*/
 
@@ -1681,6 +1685,8 @@ MEDIA QUERY -----------------------------------
     text-align: center;
   }
 
+}
+
 @media screen and (max-width: 900px){
 
   .footer .content{
@@ -1728,6 +1734,13 @@ MEDIA QUERY -----------------------------------
     border: 1px solid #888;
     width: 375px;
   }
+  .modal-content-placeholder{
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    border: 1px solid #888;
+    width: 375px;
+  }
 
 /*Modal grid*/
 
@@ -1762,8 +1775,10 @@ padding: 20px 0 20px;
 
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
+  .topnav.responsive {position: 
+    relative;
+  }
+  .topnav.responsive .icon{
     position: absolute;
     right: 0;
     top: 0;
@@ -1812,15 +1827,15 @@ padding: 20px 0 20px;
   }
 
   .text_center{
-
   text-align: left;
-
   }
 
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(:first-child){
+    display: none;
+  }
   .topnav a.icon {
     float: right;
     display: block;
@@ -1844,8 +1859,9 @@ padding: 20px 0 20px;
     padding:0;
   }
 
-  #placeholder_modal{
+  .modal-content-placeholder{
     margin-left: -15px;
+    }
   }
-}
+
 
